@@ -118376,7 +118376,6 @@ GameObject:
   - component: {fileID: 2012834114}
   - component: {fileID: 2012834113}
   - component: {fileID: 2012834112}
-  - component: {fileID: 2012834111}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -118404,40 +118403,6 @@ RectTransform:
   m_AnchoredPosition: {x: -12.9, y: -252}
   m_SizeDelta: {x: 200.63763, y: 76.05602}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2012834111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012834109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e12d55c9fd510429f8dac7d91313c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedUnit: {fileID: 0}
-  playerTurn: 1
-  selectedUnitSquare: {fileID: 1130307150}
-  playerIcon: {fileID: 1513861786}
-  playerOneIcon: {fileID: 1757168063971477599, guid: 62d39609d571d72449f803937a0552e2,
-    type: 3}
-  playerTwoIcon: {fileID: 7255854300219104043, guid: 62d39609d571d72449f803937a0552e2,
-    type: 3}
-  unitInfoPanel: {fileID: 1105407528}
-  unitInfoPanelShift: {x: 0.7, y: 0.7}
-  heathInfo: {fileID: 1889757741}
-  attackDamageInfo: {fileID: 519273702}
-  armorInfo: {fileID: 709575243}
-  defenseDamageInfo: {fileID: 432247200}
-  player1Gold: 0
-  player2Gold: 0
-  player1GoldText: {fileID: 1565762069}
-  player2GoldText: {fileID: 2124063381}
-  createdUnit: {fileID: 0}
-  createdVillage: {fileID: 0}
-  blueVictory: {fileID: 1790959154}
-  darkVictory: {fileID: 2078819737}
 --- !u!114 &2012834112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118481,7 +118446,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012834111}
+      - m_Target: {fileID: 2052250107}
         m_MethodName: EndTurn
         m_Mode: 1
         m_Arguments:
