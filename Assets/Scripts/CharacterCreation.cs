@@ -14,6 +14,7 @@ public class CharacterCreation : MonoBehaviour
     public GameObject player1Menu;
     public GameObject player2Menu;
 
+    public float m_distanceToAllowSpawn = 1.5f;
 
     private void Start()
     {
@@ -96,7 +97,7 @@ public class CharacterCreation : MonoBehaviour
         Tile[] tiles = FindObjectsOfType<Tile>();
         foreach (Tile tile in tiles)
         {
-            if (tile.isClear())
+            if (tile.isPreparedForSpawn() && tile.m_nearToBaseIndex == gm.playerTurn)
             {
                 tile.SetCreatable();
             }

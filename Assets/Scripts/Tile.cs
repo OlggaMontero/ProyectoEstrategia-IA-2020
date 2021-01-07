@@ -12,6 +12,8 @@ public class Tile : MonoBehaviour
 
     public bool isWalkable;
     public bool isCreatable;
+    public bool isNearToBase;
+    [HideInInspector] public int m_nearToBaseIndex = 0;
 
     private GM gm;
 
@@ -26,6 +28,20 @@ public class Tile : MonoBehaviour
         gm = FindObjectOfType<GM>();
         rend = GetComponent<SpriteRenderer>();
 
+        //calcular si es una tile cercana a una base o no
+        House[] bases = FindObjectsOfType<House>();
+        isNearToBase = false;
+        m_nearToBaseIndex = 0;
+        foreach (House b in bases)
+        {
+            if (Vector2.Distance(transform.position, b.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawn)
+            {
+                isNearToBase = true;
+                m_nearToBaseIndex = b.playerNumber;
+                break;
+            }
+        }
+        
     }
 
     public bool isClear() // does this tile have an obstacle on it. Yes or No?
@@ -38,6 +54,12 @@ public class Tile : MonoBehaviour
         else {
             return false;
         }
+    }
+
+
+    public bool isPreparedForSpawn()
+    {
+        return isNearToBase && isClear();
     }
 
     public void Highlight() {
@@ -58,6 +80,7 @@ public class Tile : MonoBehaviour
         isCreatable = true;
     }
 
+    
     private void OnMouseDown()
     {
         if (isWalkable == true) {
