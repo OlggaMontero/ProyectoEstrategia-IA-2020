@@ -29,7 +29,7 @@ public class GM : MonoBehaviour
     public int player1Gold;
     public int player2Gold;
 
-    public Text player1GoldText;
+    public Text player1GoldText; 
     public Text player2GoldText;
 
     public Unit createdUnit;
@@ -126,7 +126,7 @@ public class GM : MonoBehaviour
 
         // deselects the selected unit when the turn ends
         if (selectedUnit != null) {
-            selectedUnit.ResetWeaponIcon();
+            selectedUnit.ResetWeaponIcons();
             selectedUnit.isSelected = false;
             selectedUnit = null;
         }
@@ -137,7 +137,7 @@ public class GM : MonoBehaviour
         foreach (Unit unit in units) {
             unit.hasAttacked = false;
             unit.hasMoved = false;
-            unit.ResetWeaponIcon();
+            unit.ResetWeaponIcons();
         }
 
         if (playerTurn == 1) {
@@ -153,6 +153,10 @@ public class GM : MonoBehaviour
         createdUnit = null;
     }
 
+    /// <summary>
+    /// Añade 1 de oro al jugador en turno por cada pueblo en el tablero
+    /// </summary>
+    /// <param name="playerTurn"></param>
     void GetGoldIncome(int playerTurn) {
         foreach (Village village in FindObjectsOfType<Village>())
         {
@@ -171,6 +175,9 @@ public class GM : MonoBehaviour
         UpdateGoldText();
     }
 
+    /// <summary>
+    /// Actualiza la UI
+    /// </summary>
     public void UpdateGoldText()
     {
         player1GoldText.text = player1Gold.ToString();
@@ -178,7 +185,10 @@ public class GM : MonoBehaviour
     }
 
     // Victory UI
-
+    /// <summary>
+    /// Mostrar UI de victoria
+    /// </summary>
+    /// <param name="playerNumber"></param>
     public void ShowVictoryPanel(int playerNumber) {
 
         if (playerNumber == 1)
@@ -189,6 +199,9 @@ public class GM : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Pues eso
+    /// </summary>
     public void RestartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
