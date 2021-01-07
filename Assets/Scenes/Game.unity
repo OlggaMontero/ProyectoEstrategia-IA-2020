@@ -53575,6 +53575,21 @@ PrefabInstance:
       propertyPath: displayedText
       value: 
       objectReference: {fileID: 1448737425}
+    - target: {fileID: 5650372005370785778, guid: 86fd9c19c6310ab469cabfb22e170be1,
+        type: 3}
+      propertyPath: health
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650372005370785778, guid: 86fd9c19c6310ab469cabfb22e170be1,
+        type: 3}
+      propertyPath: armor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650372005370785778, guid: 86fd9c19c6310ab469cabfb22e170be1,
+        type: 3}
+      propertyPath: defenseDamage
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86fd9c19c6310ab469cabfb22e170be1, type: 3}
 --- !u!1001 &3088244331289490124
