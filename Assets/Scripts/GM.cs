@@ -120,9 +120,7 @@ public class GM : MonoBehaviour
             tile.Reset();
         }
     }
-
-    void EndTurn() {
-       
+    public void EndTurn() {
 		source.Play();
         camAnim.SetTrigger("shake");
 
