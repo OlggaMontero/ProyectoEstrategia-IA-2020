@@ -28,6 +28,7 @@ public class GM : MonoBehaviour
 
     public int player1Gold;
     public int player2Gold;
+    public int goldIncomePerTurn;
 
     public Text player1GoldText; 
     public Text player2GoldText;
@@ -121,6 +122,7 @@ public class GM : MonoBehaviour
     }
 
     void EndTurn() {
+       
 		source.Play();
         camAnim.SetTrigger("shake");
 
@@ -164,13 +166,21 @@ public class GM : MonoBehaviour
             {
                 if (playerTurn == 1)
                 {
-                    player1Gold += village.goldPerTurn;
+                    player1Gold += goldIncomePerTurn/2;
                 }
                 else
                 {
-                    player2Gold += village.goldPerTurn;
+                    player2Gold += goldIncomePerTurn/2;
                 }
             }
+        }
+        if (playerTurn == 1)
+        {
+            player1Gold += goldIncomePerTurn;
+        }
+        else
+        {
+            player2Gold += goldIncomePerTurn;
         }
         UpdateGoldText();
     }
