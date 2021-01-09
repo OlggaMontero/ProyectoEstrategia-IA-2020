@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -227,6 +228,7 @@ public class Unit : MonoBehaviour
             DamageIcon d = Instantiate(damageIcon, enemyBase.transform.position, Quaternion.identity);
             d.Setup(enemyDamage);
         }
+
 
         /*if (health <= 0)
         {
