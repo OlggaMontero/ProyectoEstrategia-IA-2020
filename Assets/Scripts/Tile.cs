@@ -13,6 +13,9 @@ public class Tile : MonoBehaviour
     public bool isWalkable;
     public bool isCreatable;
     public bool isNearToBase;
+    public bool isNearToVillage;
+    public bool isNearToBaseVillage;
+
     [HideInInspector] public int m_nearToBaseIndex = 0;
 
     private GM gm;
@@ -34,6 +37,11 @@ public class Tile : MonoBehaviour
         m_nearToBaseIndex = 0;
         foreach (House b in bases)
         {
+            if (Vector2.Distance(transform.position, b.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawnForVillage)
+            {
+                isNearToBaseVillage = true;                
+                m_nearToBaseIndex = b.playerNumber;                
+            }
             if (Vector2.Distance(transform.position, b.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawn)
             {
                 isNearToBase = true;
@@ -42,6 +50,20 @@ public class Tile : MonoBehaviour
             }
         }
         
+    }
+
+    public void checkTilesNearVillages()
+    {
+        Village[] villages = FindObjectsOfType<Village>();
+        foreach (Village v in villages)
+        {            
+            if (Vector2.Distance(transform.position, v.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawn)
+            {
+                isNearToVillage = true;
+                m_nearToBaseIndex = v.playerNumber;
+                break;
+            }
+        }
     }
 
     public bool isClear() // does this tile have an obstacle on it. Yes or No?
@@ -57,9 +79,11 @@ public class Tile : MonoBehaviour
     }
 
 
-    public bool isPreparedForSpawn()
+    public bool isPreparedForSpawn(bool village)
     {
-        return isNearToBase && isClear();
+        if(village)
+            return (isNearToBaseVillage || isNearToVillage) && isClear();
+        else return (isNearToBase || isNearToVillage) && isClear();
     }
 
     public void Highlight() {

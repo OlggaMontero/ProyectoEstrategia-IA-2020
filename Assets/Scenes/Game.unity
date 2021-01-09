@@ -531,6 +531,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &10527417
@@ -2481,6 +2483,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &130891277
@@ -3248,6 +3252,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &152853640
@@ -4000,6 +4006,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &175871999
@@ -4214,6 +4222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Village (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4688297137751264698, guid: 76ee34c1b9be29f4ebb1071fbfe8504a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ee34c1b9be29f4ebb1071fbfe8504a, type: 3}
 --- !u!4 &178089297 stripped
@@ -4281,6 +4294,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &204046167
@@ -5035,6 +5050,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &282555594
@@ -5185,6 +5202,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &287163402
@@ -5460,6 +5479,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &291078851
@@ -5633,6 +5654,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &291328400
@@ -6405,6 +6428,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Village (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4688297137751264698, guid: 76ee34c1b9be29f4ebb1071fbfe8504a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ee34c1b9be29f4ebb1071fbfe8504a, type: 3}
 --- !u!4 &377323956 stripped
@@ -6593,6 +6621,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &395851366
@@ -7015,6 +7045,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &414040026
@@ -7438,6 +7470,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &418167243
@@ -7759,6 +7793,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &428153500
@@ -8265,6 +8301,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &430060767
@@ -8609,6 +8647,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &444275110
@@ -10382,6 +10422,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &527423823
@@ -10803,6 +10845,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &562379952
@@ -11124,6 +11168,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &575068305
@@ -11445,6 +11491,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &578667771
@@ -11962,6 +12010,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &595264534
@@ -12649,6 +12699,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &619940125
@@ -12891,6 +12943,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &625330269
@@ -13212,6 +13266,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &628312349
@@ -13467,6 +13523,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &637542607
@@ -14071,6 +14129,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &667053051
@@ -14605,6 +14665,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &698368475
@@ -15131,6 +15193,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &721248922
@@ -15606,6 +15670,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &741485355
@@ -16293,6 +16359,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &759996221
@@ -16580,6 +16648,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &774346181
@@ -16753,6 +16823,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &788039795
@@ -17074,6 +17146,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &806980584
@@ -17395,6 +17469,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &810560396
@@ -17739,6 +17815,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &832594871
@@ -18037,6 +18115,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &834232583
@@ -18657,6 +18737,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &890024803
@@ -19322,6 +19404,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &904324606
@@ -19643,6 +19727,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &916831766
@@ -20106,6 +20192,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &939012646
@@ -20427,6 +20515,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &943515612
@@ -20748,6 +20838,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &947828204
@@ -21145,6 +21237,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &975717436
@@ -21417,6 +21511,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &996741497
@@ -21738,6 +21834,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &998868520
@@ -22368,6 +22466,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1032653867
@@ -22783,6 +22883,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1065100065
@@ -23038,6 +23140,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1069847870
@@ -23734,6 +23838,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1088412909
@@ -23949,6 +24055,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1102973360
@@ -24270,6 +24378,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1103321009
@@ -25033,6 +25143,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1133882772
@@ -25206,6 +25318,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1141081254
@@ -25572,6 +25686,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1159865039
@@ -25870,6 +25986,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1165825735
@@ -26705,7 +26823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1195054085
 Transform:
   m_ObjectHideFlags: 0
@@ -26899,6 +27017,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1195686604
@@ -27160,6 +27280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Village (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7767452286446655037, guid: da3435065a89e2442b5138b621f7826c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7767452286446655039, guid: da3435065a89e2442b5138b621f7826c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27249,6 +27374,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1198288875
@@ -27718,6 +27845,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1221208186
@@ -28039,6 +28168,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1246140698
@@ -28366,6 +28497,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1259736263
@@ -28687,6 +28820,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1273104365
@@ -29119,6 +29254,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1327578800
@@ -29562,6 +29699,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1345761046
@@ -29775,6 +29914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue Village (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688297137751264698, guid: 76ee34c1b9be29f4ebb1071fbfe8504a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ee34c1b9be29f4ebb1071fbfe8504a, type: 3}
@@ -30593,6 +30737,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1399345791
@@ -30961,6 +31107,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1409823817
@@ -31681,6 +31829,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1425048398
@@ -31958,6 +32108,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1434207763
@@ -32593,6 +32745,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1452964793
@@ -33103,6 +33257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Village (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4688297137751264698, guid: 76ee34c1b9be29f4ebb1071fbfe8504a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ee34c1b9be29f4ebb1071fbfe8504a, type: 3}
 --- !u!1 &1482966846
@@ -33463,6 +33622,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1518497446
@@ -33784,6 +33945,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1542846997
@@ -33986,6 +34149,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1545089231
@@ -34142,6 +34307,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1556653416
@@ -34441,8 +34608,9 @@ MonoBehaviour:
   attackDamageInfo: {fileID: 903977543}
   armorInfo: {fileID: 168000085}
   defenseDamageInfo: {fileID: 868939978}
-  player1Gold: 0
-  player2Gold: 0
+  player1Gold: 60
+  player2Gold: 60
+  goldIncomePerTurn: 40
   player1GoldText: {fileID: 581233310}
   player2GoldText: {fileID: 1063579114}
   createdUnit: {fileID: 0}
@@ -34479,7 +34647,8 @@ MonoBehaviour:
   player2openButton: {fileID: 1073180964}
   player1Menu: {fileID: 1920723666}
   player2Menu: {fileID: 158675921}
-  m_distanceToAllowSpawn: 1.5
+  m_distanceToAllowSpawn: 1.9
+  m_distanceToAllowSpawnForVillage: 4.9
 --- !u!82 &1570414223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34631,6 +34800,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1574191211
@@ -35166,6 +35337,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1591812920
@@ -35682,6 +35855,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1619227066
@@ -36386,6 +36561,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1659197855
@@ -36521,6 +36698,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dark Village (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767452286446655037, guid: da3435065a89e2442b5138b621f7826c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7767452286446655039, guid: da3435065a89e2442b5138b621f7826c,
         type: 3}
@@ -37510,6 +37692,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1702363186
@@ -38083,6 +38267,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1736864602
@@ -43051,6 +43237,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1750463339
@@ -45026,6 +45214,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1810131498
@@ -45347,6 +45537,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1822241347
@@ -45668,6 +45860,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1826945822
@@ -46213,6 +46407,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1835241400
@@ -46534,6 +46730,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1838774640
@@ -46957,6 +47155,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1850219213
@@ -47405,6 +47605,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1866218288
@@ -47870,6 +48072,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1899208555
@@ -48084,6 +48288,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1904743727
@@ -48961,6 +49167,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1949891190
@@ -49282,6 +49490,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1957134210
@@ -49603,6 +49813,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1958112784
@@ -50323,6 +50535,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &1980904208
@@ -50481,6 +50695,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dark Village (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767452286446655037, guid: da3435065a89e2442b5138b621f7826c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7767452286446655039, guid: da3435065a89e2442b5138b621f7826c,
         type: 3}
@@ -50972,6 +51191,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &2031442937
@@ -51287,6 +51508,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &2037623484
@@ -51460,6 +51683,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &2039072399
@@ -52021,6 +52246,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &2073560998
@@ -52374,6 +52601,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &2094482862
@@ -52695,6 +52924,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &2100296128
@@ -53006,6 +53237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Village (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4688297137751264698, guid: 76ee34c1b9be29f4ebb1071fbfe8504a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ee34c1b9be29f4ebb1071fbfe8504a, type: 3}
 --- !u!4 &2123794295 stripped
@@ -53188,6 +53424,8 @@ MonoBehaviour:
   isWalkable: 0
   isCreatable: 0
   isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!61 &2127815569
@@ -53583,12 +53821,12 @@ PrefabInstance:
     - target: {fileID: 5650372005370785778, guid: 86fd9c19c6310ab469cabfb22e170be1,
         type: 3}
       propertyPath: armor
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5650372005370785778, guid: 86fd9c19c6310ab469cabfb22e170be1,
         type: 3}
       propertyPath: defenseDamage
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86fd9c19c6310ab469cabfb22e170be1, type: 3}
@@ -53603,6 +53841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dark Village
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767452286446655037, guid: da3435065a89e2442b5138b621f7826c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7767452286446655039, guid: da3435065a89e2442b5138b621f7826c,
         type: 3}
@@ -53869,6 +54112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue Village
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688297137751264698, guid: 76ee34c1b9be29f4ebb1071fbfe8504a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ee34c1b9be29f4ebb1071fbfe8504a, type: 3}
