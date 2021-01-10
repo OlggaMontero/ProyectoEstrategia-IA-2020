@@ -16533,7 +16533,7 @@ PrefabInstance:
     - target: {fileID: 4446637798450979531, guid: f39be49cad0c02340820d187847171e4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4446637798450979531, guid: f39be49cad0c02340820d187847171e4,
         type: 3}
@@ -34617,6 +34617,14 @@ MonoBehaviour:
   createdVillage: {fileID: 0}
   blueVictory: {fileID: 243264726}
   darkVictory: {fileID: 1969939416}
+  _blue_archer: {fileID: 626269173632994736, guid: dfd3953b532394b459bb5b605feb9936,
+    type: 3}
+  _blue_bat: {fileID: 3831706681586816701, guid: 0f0a2447a78d86143a35917ac0efe6e7,
+    type: 3}
+  _blue_knight: {fileID: 1888838832, guid: e4ad95c761a65f243b449f1e95d0c00e, type: 3}
+  _blue_village: {fileID: 4905471955937416695, guid: 76ee34c1b9be29f4ebb1071fbfe8504a,
+    type: 3}
+  _ia_villages: []
 --- !u!4 &1570414221
 Transform:
   m_ObjectHideFlags: 0
@@ -34649,6 +34657,7 @@ MonoBehaviour:
   player2Menu: {fileID: 158675921}
   m_distanceToAllowSpawn: 1.9
   m_distanceToAllowSpawnForVillage: 4.9
+  _tiles_to_place_things: []
 --- !u!82 &1570414223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -53806,7 +53815,7 @@ PrefabInstance:
     - target: {fileID: 5650372005370785679, guid: 86fd9c19c6310ab469cabfb22e170be1,
         type: 3}
       propertyPath: m_Name
-      value: Dark House
+      value: Dark Base
       objectReference: {fileID: 0}
     - target: {fileID: 5650372005370785778, guid: 86fd9c19c6310ab469cabfb22e170be1,
         type: 3}
@@ -54195,7 +54204,7 @@ PrefabInstance:
     - target: {fileID: 5915751925507380093, guid: 3a7f9032994daa748afb1fd85d4efb50,
         type: 3}
       propertyPath: m_Name
-      value: Blue House
+      value: Blue Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a7f9032994daa748afb1fd85d4efb50, type: 3}
