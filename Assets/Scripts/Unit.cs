@@ -44,7 +44,7 @@ public class Unit : MonoBehaviour
 
 	private AudioSource source;
 
-    public Text displayedText;
+    //public Text displayedText;
 
     //IA Variables
     List<Tile> _tilesReacheable;
@@ -71,10 +71,11 @@ public class Unit : MonoBehaviour
 
     private void UpdateHealthDisplay ()
     {
-        if (isKing)
+        /*if (isKing)
         {
             displayedText.text = health.ToString();
-        }
+        }*/
+        return;
     }
 
     #region Mouse control
@@ -276,10 +277,10 @@ public class Unit : MonoBehaviour
 				camAnim.SetTrigger("shake");
 			}
 
-            if (enemy.isKing)
+            /*if (enemy.isKing)
             {
                 gm.ShowVictoryPanel(enemy.playerNumber);
-            }
+            }*/
 
             GetWalkableTiles(); // check for new walkable tiles (if enemy has died we can now walk on his tile)
             gm.RemoveInfoPanel(enemy);
@@ -295,10 +296,10 @@ public class Unit : MonoBehaviour
 				camAnim.SetTrigger("shake");
 			}
 
-			if (isKing)
+			/*if (isKing)
             {
                 gm.ShowVictoryPanel(playerNumber);
-            }
+            }*/
 
             gm.ResetTiles(); // reset tiles when we die
             gm.RemoveInfoPanel(this);
