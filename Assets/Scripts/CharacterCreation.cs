@@ -12,12 +12,18 @@ public class CharacterCreation : MonoBehaviour
     public Button player2openButton;
 
     public GameObject player1Menu;
-    public GameObject player2Menu;
+    public GameObject player2Menu;    
 
+    public float m_distanceToAllowSpawn = 1.9f;
+    public float m_distanceToAllowSpawnForVillage = 4.9f;
+    House[] bases;
+    GameObject currentTurnHouse;
 
     private void Start()
     {
         gm = FindObjectOfType<GM>();
+
+        bases = FindObjectsOfType<House>();        
     }
 
     private void Update()
@@ -62,7 +68,7 @@ public class CharacterCreation : MonoBehaviour
         gm.createdUnit = unit;
 
         DeselectUnit();
-        SetCreatableTiles();
+        SetCreatableTiles(false);
     }
 
     public void BuyVillage(Village village) {
@@ -86,19 +92,39 @@ public class CharacterCreation : MonoBehaviour
 
         DeselectUnit();
 
-        SetCreatableTiles();
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile t in tiles)
+        {
+            t.checkTilesNearVillages();
+        }
+
+        SetCreatableTiles(true);
 
     }
 
-    void SetCreatableTiles() {
-        gm.ResetTiles();
+    void SetCreatableTiles(bool village) {
+        gm.ResetTiles();        
 
         Tile[] tiles = FindObjectsOfType<Tile>();
         foreach (Tile tile in tiles)
         {
-            if (tile.isClear())
+            if (village)
             {
-                tile.SetCreatable();
+                foreach (House h in bases)
+                {
+                    if (h.playerNumber == gm.playerTurn) currentTurnHouse = h.gameObject;                     
+                }
+                if (tile.isPreparedForSpawn(true) && tile.m_nearToBaseIndex == gm.playerTurn && (Vector2.Distance(tile.transform.position, currentTurnHouse.transform.position) > 1.1f))
+                {
+                    tile.SetCreatable();
+                }
+            }
+            else
+            {
+                if (tile.isPreparedForSpawn(false) && tile.m_nearToBaseIndex == gm.playerTurn)
+                {
+                    tile.SetCreatable();
+                }
             }
         }
     }

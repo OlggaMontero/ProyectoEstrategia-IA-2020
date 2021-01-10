@@ -8,7 +8,7 @@ public class HoverEffect : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        transform.localScale += new Vector3(amount, amount, amount);
+        transform.localScale += new Vector3(amount, amount, amount);        
     }
 
     private void OnMouseExit()
