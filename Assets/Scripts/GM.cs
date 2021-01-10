@@ -14,7 +14,7 @@ public class GM : MonoBehaviour
 
 
     private Animator camAnim;
-    public Image playerIcon; 
+    public Image playerIcon;
     public Sprite playerOneIcon;
     public Sprite playerTwoIcon;
 
@@ -30,7 +30,7 @@ public class GM : MonoBehaviour
     public int player2Gold;
     public int goldIncomePerTurn;
 
-    public Text player1GoldText; 
+    public Text player1GoldText;
     public Text player2GoldText;
 
     public Unit createdUnit;
@@ -39,13 +39,17 @@ public class GM : MonoBehaviour
     public GameObject blueVictory;
     public GameObject darkVictory;
 
-	private AudioSource source;
+    private AudioSource source;
 
     private void Start()
     {
-		source = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
         camAnim = Camera.main.GetComponent<Animator>();
         GetGoldIncome(1);
+        FogTiles();
+        Unit[] units = FindObjectsOfType<Unit>();
+        MostrarUnidadesJugador(units);
+        CompruebaVisionUnidades(units);
     }
 
     private void Update()
@@ -109,7 +113,7 @@ public class GM : MonoBehaviour
         if (unit.Equals(currentInfoUnit))
         {
             unitInfoPanel.SetActive(false);
-			currentInfoUnit = null;
+            currentInfoUnit = null;
         }
     }
 
@@ -121,7 +125,7 @@ public class GM : MonoBehaviour
         }
     }
     public void EndTurn() {
-		source.Play();
+        source.Play();
         camAnim.SetTrigger("shake");
 
         // deselects the selected unit when the turn ends
@@ -148,6 +152,9 @@ public class GM : MonoBehaviour
             playerTurn = 1;
         }
 
+        FogTiles();
+        MostrarUnidadesJugador(units);
+        CompruebaVisionUnidades(units);
         GetGoldIncome(playerTurn);
         GetComponent<CharacterCreation>().CloseCharacterCreationMenus();
         createdUnit = null;
@@ -164,11 +171,11 @@ public class GM : MonoBehaviour
             {
                 if (playerTurn == 1)
                 {
-                    player1Gold += goldIncomePerTurn/2;
+                    player1Gold += goldIncomePerTurn / 2;
                 }
                 else
                 {
-                    player2Gold += goldIncomePerTurn/2;
+                    player2Gold += goldIncomePerTurn / 2;
                 }
             }
         }
@@ -215,4 +222,42 @@ public class GM : MonoBehaviour
     }
 
 
+    public void MostrarUnidadesJugador(Unit[] unidades)
+    {
+        foreach (Unit unit in unidades)
+        {
+            if (playerTurn == unit.playerNumber)
+            {
+                unit.Mostrar();
+            }
+            else
+            {
+                unit.Esconder();
+            }
+            unit.ResetVision();
+            
+        }
+    }
+
+    public void CompruebaVisionUnidades(Unit[] unidades)
+    {
+        foreach(Unit unit in unidades)
+        {
+            if (playerTurn == unit.playerNumber)
+            {
+                unit.GetVisibleEnemies();
+                unit.VisibleTiles();
+            }
+        }
+    }
+
+    public void FogTiles()
+    {
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile tile in tiles)
+        {
+            tile.ResetVision();
+            tile.Esconder();
+        }
+    }
 }

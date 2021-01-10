@@ -15,6 +15,7 @@ public class Unit : MonoBehaviour
     private GM gm;
 
     public int attackRadius;
+    public int viewRadius;
     public bool hasAttacked;
     public List<Unit> enemiesInRange = new List<Unit>();
 
@@ -44,7 +45,16 @@ public class Unit : MonoBehaviour
 
 	private AudioSource source;
 
-    public Text displayedText; 
+    public Text displayedText;
+
+    public Collider2D fieldOfView;
+
+    private int enemigosQueMeVen = 0;
+
+    private HashSet<GameObject> enemigosVistos = new HashSet<GameObject>();
+    private HashSet<GameObject> tilesVistos = new HashSet<GameObject>();
+
+
 
     private void Start()
     {
@@ -150,10 +160,35 @@ public class Unit : MonoBehaviour
                 { // is the tile clear from any obstacles
                     tile.Highlight();
                 }
-
             }          
         }
     }
+
+    public void VisibleTiles()
+    { 
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile tile in tiles)
+        {
+            if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= viewRadius)
+            {
+                if (!tilesVistos.Contains(tile.gameObject))
+                {
+                    tile.VistoPorUnidad();
+                    tilesVistos.Add(tile.gameObject);
+                }
+            }
+            else
+            {
+                if (tilesVistos.Contains(tile.gameObject))
+                {
+                    tile.DesvistoPorUnidad();
+                    tilesVistos.Remove(tile.gameObject);
+                }
+            }
+        }
+    }
+
+
 
     /// <summary>
     /// Coger lista de enemigos en rango
@@ -179,8 +214,40 @@ public class Unit : MonoBehaviour
         if (EnemyBaseInRange() && !hasAttacked) enemyBase.GetComponent<House>().weaponIcon.SetActive(true);
     }
 
+    public void GetVisibleEnemies()
+    {
+        enemiesInRange.Clear();
+
+        Unit[] enemies = FindObjectsOfType<Unit>();
+        foreach (Unit enemy in enemies)
+        {
+            if (enemy.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - enemy.transform.position.x) + Mathf.Abs(transform.position.y - enemy.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!enemigosVistos.Contains(enemy.gameObject))
+                    {
+                        enemy.VistoPorEnemigo();
+                        enemigosVistos.Add(enemy.gameObject);
+                    }
+                }
+                else
+                {
+                    if (enemigosVistos.Contains(enemy.gameObject))
+                    {
+                        enemy.DesvistoPorEnemigo();
+                        enemigosVistos.Remove(enemy.gameObject);
+                    }
+                }
+            
+            }
+        }
+
+    }
+
     private bool EnemyBaseInRange()
     {
+        return false;
         m_enemyBaseInRange = (Mathf.Abs(transform.position.x - enemyBase.transform.position.x) + Mathf.Abs(transform.position.y - enemyBase.transform.position.y) <= attackRadius);
         return m_enemyBaseInRange;
     }
@@ -346,14 +413,17 @@ public class Unit : MonoBehaviour
 
     IEnumerator StartMovement(Transform movePos) { // Moves the character to his new position.
 
-
         while (transform.position.x != movePos.position.x) { // first aligns him with the new tile's x pos
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(movePos.position.x, transform.position.y), moveSpeed * Time.deltaTime);
+            GetVisibleEnemies();
+            VisibleTiles();
             yield return null;
         }
         while (transform.position.y != movePos.position.y) // then y
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, movePos.position.y), moveSpeed * Time.deltaTime);
+            GetVisibleEnemies();
+            VisibleTiles();
             yield return null;
         }
 
@@ -363,6 +433,56 @@ public class Unit : MonoBehaviour
         gm.MoveInfoPanel(this);
     }
 
+    public void VistoPorEnemigo()
+    {
+        enemigosQueMeVen += 1;
+        if (enemigosQueMeVen >= 1)
+        {
+            Mostrar();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void DesvistoPorEnemigo()
+    {
+        enemigosQueMeVen -= 1;
+        if (enemigosQueMeVen == 0)
+        {
+            Esconder();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void Mostrar()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1.0f);
+        }
+    }
+
+    public void Esconder()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.0f);
+        }
+    }
+
+    public void ResetVision()
+    {
+        enemigosQueMeVen = 0;
+        enemigosVistos.Clear();
+        tilesVistos.Clear();
+    }
 
 
 

@@ -7,6 +7,7 @@ public class Tile : MonoBehaviour
     private SpriteRenderer rend;
     public Color highlightedColor;
     public Color creatableColor;
+    public Color fogColor;
 
     public LayerMask obstacles;
 
@@ -24,6 +25,11 @@ public class Tile : MonoBehaviour
     private bool sizeIncrease;
 
 	private AudioSource source;
+
+    //public BoxNode node;
+
+    private int unidadesViendome;
+
 
     private void Start()
     {
@@ -94,7 +100,10 @@ public class Tile : MonoBehaviour
 
     public void Reset()
     {
-        rend.color = Color.white;
+        if(unidadesViendome >= 1)
+        {
+            rend.color = Color.white;
+        }
         isWalkable = false;
         isCreatable = false;
     }
@@ -146,4 +155,55 @@ public class Tile : MonoBehaviour
             transform.localScale -= new Vector3(amount, amount, amount);
         }
     }
+
+
+    public void VistoPorUnidad()
+    {
+        unidadesViendome += 1;
+        if (unidadesViendome >= 1)
+        {
+            Mostrar();
+        }
+        if (unidadesViendome < 0)
+        {
+            Debug.Log("bug -> tile.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void DesvistoPorUnidad()
+    {
+        unidadesViendome -= 1;
+        if (unidadesViendome == 0)
+        {
+            Esconder();
+        }
+        if (unidadesViendome < 0)
+        {
+            Debug.Log("bug -> tile.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void Mostrar()
+    {
+        if (rend == null)
+        {
+            rend = GetComponent<SpriteRenderer>();
+        }
+        rend.color = Color.white;
+    }
+
+    public void Esconder()
+    {
+        if (rend == null)
+        {
+            rend = GetComponent<SpriteRenderer>();
+        }
+        rend.color = fogColor;
+    }
+
+    public void ResetVision()
+    {
+        unidadesViendome = 0;
+    }
+
 }

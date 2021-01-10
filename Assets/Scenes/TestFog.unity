@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -612,6 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -935,6 +937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -1281,6 +1284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -1764,7 +1768,7 @@ Transform:
   - {fileID: 15586793}
   - {fileID: 1661229919}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &20767247
 PrefabInstance:
@@ -1957,6 +1961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -2280,6 +2285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -2580,6 +2586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -2903,6 +2910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -3443,6 +3451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -3845,6 +3854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -4168,6 +4178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -4514,6 +4525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -4837,6 +4849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -5137,6 +5150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -5460,6 +5474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -5806,6 +5821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -6106,6 +6122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -6429,6 +6446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -6775,6 +6793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -7098,6 +7117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -7398,6 +7418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -7846,6 +7867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -8146,6 +8168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -8492,6 +8515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -9006,6 +9030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -9520,6 +9545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -10009,6 +10035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -10411,6 +10438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -10648,118 +10676,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &139588746
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 139588750}
-  - component: {fileID: 139588749}
-  - component: {fileID: 139588748}
-  - component: {fileID: 139588747}
-  - component: {fileID: 139588751}
-  m_Layer: 5
-  m_Name: CanvasFog
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &139588747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139588746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &139588748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139588746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &139588749
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139588746}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 1965494398}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 943648013
-  m_SortingOrder: -100
-  m_TargetDisplay: 0
---- !u!224 &139588750
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139588746}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1526840183}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.99, y: 0}
-  m_SizeDelta: {x: 10, y: 10}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &139588751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139588746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0153e91b7d27054ba41b7b132be1269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &139781265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10928,6 +10844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -11251,6 +11168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -11574,6 +11492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -12210,6 +12129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -12510,6 +12430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -13059,6 +12980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -13382,6 +13304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -13804,6 +13727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -14127,6 +14051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -14450,6 +14375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -14855,6 +14781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -15178,6 +15105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -15478,6 +15406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -15801,6 +15730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -16326,6 +16256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -16977,6 +16908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -17300,6 +17232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -17600,6 +17533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -18001,6 +17935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -18324,6 +18259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -18647,6 +18583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -18993,6 +18930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -19375,6 +19313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -19698,6 +19637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -20255,6 +20195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -20703,6 +20644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -21026,6 +20968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -21490,6 +21433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -21943,6 +21887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -22289,6 +22234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -22589,6 +22535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -23094,6 +23041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -23417,6 +23365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -23997,6 +23946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -24320,6 +24270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -24620,6 +24571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -24943,6 +24895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -25266,6 +25219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -25589,6 +25543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -25912,6 +25867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -26258,6 +26214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -26558,6 +26515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -27086,6 +27044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -27409,6 +27368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -27732,6 +27692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -28032,6 +27993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -28480,6 +28442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -28803,6 +28766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -29126,6 +29090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -29426,6 +29391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -29847,6 +29813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -30170,6 +30137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -30470,6 +30438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -30816,6 +30785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -31116,6 +31086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -31633,6 +31604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -32079,6 +32051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -32222,6 +32195,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue Bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831706681586816672, guid: 0f0a2447a78d86143a35917ac0efe6e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831706681586816701, guid: 0f0a2447a78d86143a35917ac0efe6e7,
+        type: 3}
+      propertyPath: viewRadius
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3831706681586816703, guid: 0f0a2447a78d86143a35917ac0efe6e7,
         type: 3}
@@ -32454,6 +32437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -32961,6 +32945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -33284,6 +33269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -33689,6 +33675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -34088,6 +34075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -34411,6 +34399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -34757,6 +34746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -35080,6 +35070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -35212,80 +35203,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 5.5}
   m_EdgeRadius: 0
---- !u!1 &517379690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 517379692}
-  - component: {fileID: 517379691}
-  m_Layer: 0
-  m_Name: FogOfWarMainCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!20 &517379691
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517379690}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 4
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 10
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 1024
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 49c9e31e6e0c6ee46bd97436964c11ee, type: 2}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &517379692
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517379690}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 2.25, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &531687480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35454,6 +35371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -35800,6 +35718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -36123,6 +36042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -36423,6 +36343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -36769,6 +36690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -37092,6 +37014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -37415,6 +37338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -37817,6 +37741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -38410,6 +38335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -39139,6 +39065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -39303,7 +39230,7 @@ Transform:
   - {fileID: 1251286102}
   - {fileID: 1605890212}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &612599268
 PrefabInstance:
@@ -39496,6 +39423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -39819,6 +39747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -40119,6 +40048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -40442,6 +40372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -40765,6 +40696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -41088,6 +41020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -41434,6 +41367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -41734,6 +41668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -42080,6 +42015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -42403,6 +42339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -42703,6 +42640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -43101,6 +43039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -43424,6 +43363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -43949,6 +43889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -44272,6 +44213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -44618,6 +44560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -44941,6 +44884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -45241,6 +45185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -45667,6 +45612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -46013,6 +45959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -46400,6 +46347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -46723,6 +46671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -47046,6 +46995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -47369,6 +47319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -47793,6 +47744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -48139,6 +48091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -48462,6 +48415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -49110,6 +49064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -49538,6 +49493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -49861,6 +49817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -50104,7 +50061,7 @@ Transform:
   m_LocalScale: {x: 0.16062763, y: 0.16062763, z: 0.16062763}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &778947284
 SpriteRenderer:
@@ -50469,6 +50426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -51101,6 +51059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -51365,7 +51324,7 @@ Transform:
   - {fileID: 1521893245}
   - {fileID: 99890349}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801065128
 GameObject:
@@ -51637,6 +51596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -52365,6 +52325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -52688,6 +52649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -53011,6 +52973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -53537,6 +53500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -53960,6 +53924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -54388,6 +54353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -54711,6 +54677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -55086,6 +55053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -55409,6 +55377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -55755,6 +55724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -56203,6 +56173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -56549,6 +56520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -56945,7 +56917,7 @@ Transform:
   - {fileID: 885474354}
   - {fileID: 1621438245}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &929851194
 PrefabInstance:
@@ -57138,6 +57110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -57461,6 +57434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -57863,6 +57837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -58186,6 +58161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -58610,6 +58586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -58933,6 +58910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -59279,6 +59257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -59579,6 +59558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -60040,6 +60020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -60363,6 +60344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -60709,6 +60691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -61009,6 +60992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -61564,6 +61548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -61989,6 +61974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -62312,6 +62298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -62467,80 +62454,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 5.5}
   m_EdgeRadius: 0
---- !u!1 &981465146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 981465148}
-  - component: {fileID: 981465147}
-  m_Layer: 0
-  m_Name: FogOfWarSecondaryCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!20 &981465147
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981465146}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 10
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 2048
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 1c7b3e6de78274b4da72cebaf53145f9, type: 2}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &981465148
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981465146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 2.25, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988352420
 GameObject:
   m_ObjectHideFlags: 0
@@ -62957,6 +62870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -63257,6 +63171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -63580,6 +63495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -63979,6 +63895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -64578,6 +64495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -64878,6 +64796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -65201,6 +65120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -65524,6 +65444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -65870,6 +65791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -66225,6 +66147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -66525,6 +66448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -66848,6 +66772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -67253,6 +67178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -67576,6 +67502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -67899,6 +67826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -68291,6 +68219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -68691,6 +68620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -69116,6 +69046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -69515,6 +69446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -70014,6 +69946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -70360,6 +70293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -70683,6 +70617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -71006,6 +70941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -71329,6 +71265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -71629,6 +71566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -71975,6 +71913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -72275,6 +72214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -72700,6 +72640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -73023,6 +72964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -73346,6 +73288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -73692,6 +73635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -74015,6 +73959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -74338,6 +74283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -74638,6 +74584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -75084,6 +75031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -75414,6 +75362,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dark Bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642533359335901395, guid: 88b3f3ba5316f7e45aac1f15d6b71e81,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642533359335901398, guid: 88b3f3ba5316f7e45aac1f15d6b71e81,
+        type: 3}
+      propertyPath: viewRadius
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88b3f3ba5316f7e45aac1f15d6b71e81, type: 3}
@@ -80176,7 +80134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1001 &1274617497
 PrefabInstance:
@@ -80346,6 +80304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -80669,6 +80628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -80992,6 +80952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -81315,6 +81276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -81608,7 +81570,7 @@ Transform:
   - {fileID: 564793012}
   - {fileID: 470739442}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1298351636
 GameObject:
@@ -81883,6 +81845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -82206,6 +82169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -82582,6 +82546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -82905,6 +82870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -83614,6 +83580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -83937,6 +83904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -84283,6 +84251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -84708,6 +84677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -85031,6 +85001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -85331,6 +85302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -85736,6 +85708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -86082,6 +86055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -86405,6 +86379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -86806,6 +86781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -87497,6 +87473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -87843,6 +87820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -88268,6 +88246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -88860,6 +88839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -89262,6 +89242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -89747,6 +89728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -90047,6 +90029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -90393,6 +90376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -90996,6 +90980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -91296,6 +91281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -91819,6 +91805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -92080,77 +92067,6 @@ Transform:
   m_Father: {fileID: 791913836}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1526840182
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1526840183}
-  - component: {fileID: 1526840185}
-  - component: {fileID: 1526840184}
-  m_Layer: 5
-  m_Name: RawImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1526840183
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526840182}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 139588750}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1526840184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526840182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 49c9e31e6e0c6ee46bd97436964c11ee, type: 2}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1526840185
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526840182}
-  m_CullTransparentMesh: 0
 --- !u!1001 &1530310138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92319,6 +92235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -92820,6 +92737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -93143,6 +93061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -93489,6 +93408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -93812,6 +93732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -94315,6 +94236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -94720,6 +94642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -95043,6 +94966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -95389,6 +95313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -95667,7 +95592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1593989278
 GameObject:
@@ -95940,6 +95865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -96263,6 +96189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -96402,6 +96329,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 612477159}
     m_Modifications:
+    - target: {fileID: 626269173632994736, guid: dfd3953b532394b459bb5b605feb9936,
+        type: 3}
+      propertyPath: viewRadius
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 626269173632994742, guid: dfd3953b532394b459bb5b605feb9936,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -96461,6 +96393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue Archer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 626269173632994743, guid: dfd3953b532394b459bb5b605feb9936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfd3953b532394b459bb5b605feb9936, type: 3}
@@ -96638,6 +96575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -97244,6 +97182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -97747,6 +97686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -98093,6 +98033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -98498,6 +98439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -98798,6 +98740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -99144,6 +99087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -99444,6 +99388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -99767,6 +99712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -100090,6 +100036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -100413,6 +100360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -100919,6 +100867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -101242,6 +101191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -101542,6 +101492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -101943,6 +101894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -102266,6 +102218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -102689,6 +102642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -103012,6 +102966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -103358,6 +103313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -103689,7 +103645,7 @@ RectTransform:
   m_Children:
   - {fileID: 725219315}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -104127,6 +104083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -104427,6 +104384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -104750,6 +104708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -105073,6 +105032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -105396,6 +105356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -105922,6 +105883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -106347,6 +106309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -106873,6 +106836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -107196,6 +107160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -107542,6 +107507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -107842,6 +107808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -108290,6 +108257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -108715,6 +108683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -109038,6 +109007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -109338,6 +109308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -109661,6 +109632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -109984,6 +109956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -110603,6 +110576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -111050,6 +111024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -111455,6 +111430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -111778,6 +111754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -112078,6 +112055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -112401,6 +112379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -112971,6 +112950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -113730,6 +113710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -114053,6 +114034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -114454,6 +114436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -114777,6 +114760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -115100,6 +115084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -115502,6 +115487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -115900,6 +115886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -116223,6 +116210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -116605,6 +116593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -117006,6 +116995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -117262,7 +117252,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1966735897
 PrefabInstance:
@@ -117455,6 +117445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -117837,6 +117828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -118104,12 +118096,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Archer
       objectReference: {fileID: 0}
+    - target: {fileID: 3293640991218369701, guid: e29861ac58e55d04ca67678a523a8c67,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3293640991218369720, guid: e29861ac58e55d04ca67678a523a8c67,
         type: 3}
       propertyPath: deathEffect
       value: 
       objectReference: {fileID: 8882834092664154197, guid: 43e58a09770a414488a4edf9a2bb5ea7,
         type: 3}
+    - target: {fileID: 3293640991218369720, guid: e29861ac58e55d04ca67678a523a8c67,
+        type: 3}
+      propertyPath: viewRadius
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3293640991218369721, guid: e29861ac58e55d04ca67678a523a8c67,
         type: 3}
       propertyPath: m_Enabled
@@ -118540,6 +118542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -119050,6 +119053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -119373,6 +119377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -119673,6 +119678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -120339,6 +120345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -120606,7 +120613,7 @@ Transform:
   - {fileID: 1404789723}
   - {fileID: 2123221840}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030329981
 GameObject:
@@ -120705,7 +120712,7 @@ RectTransform:
   - {fileID: 2042803854}
   - {fileID: 316438431}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -120936,6 +120943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -121312,6 +121320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -121635,6 +121644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -122140,6 +122150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -122587,6 +122598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -122887,6 +122899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -123210,6 +123223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -123688,6 +123702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -124011,6 +124026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -124412,6 +124428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -124758,6 +124775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -125058,6 +125076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -125404,6 +125423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -125805,6 +125825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -126128,6 +126149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -126316,7 +126338,7 @@ RectTransform:
   m_Children:
   - {fileID: 1464212335}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -126670,6 +126692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -126970,6 +126993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -127293,6 +127317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -127616,6 +127641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -128038,6 +128064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -128361,6 +128388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -128782,6 +128810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -129181,6 +129210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -129481,6 +129511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
@@ -129827,6 +129858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
