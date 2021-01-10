@@ -25,6 +25,8 @@ public class Tile : MonoBehaviour
 
 	private AudioSource source;
 
+    public BoxNode node;
+
     private void Start()
     {
 		source = GetComponent<AudioSource>();
@@ -35,6 +37,7 @@ public class Tile : MonoBehaviour
         House[] bases = FindObjectsOfType<House>();
         isNearToBase = false;
         m_nearToBaseIndex = 0;
+        f_InitializeNode();
         foreach (House b in bases)
         {
             if (Vector2.Distance(transform.position, b.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawnForVillage)
@@ -50,6 +53,11 @@ public class Tile : MonoBehaviour
             }
         }
         
+    }
+
+    private void f_InitializeNode()
+    {
+        node = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
     }
 
     public void checkTilesNearVillages()

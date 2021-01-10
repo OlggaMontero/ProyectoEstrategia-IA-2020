@@ -1,17 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public struct BoxNode 
+public class BoxNode 
 {
-    public int ArcherValue;
-    public int BatValue;
-    public int KingValue;
-    public int VillageValue;
-    public int KnightValue;
-    public int BaseValue;
+    public float ArcherValue;
+    public float BatValue;
+    public float KingValue;
+    public float VillageValue;
+    public float KnightValue;
+    public float BaseValue;
 
     public Vector2 position;
+    public Vector2Int MatrixPosition;
 
-    public int nodeIndex;
+    public BoxNode(float archerValue, float batValue, float kingValue, float villageValue, float knightValue, float baseValue, Vector2 position, Vector2Int matrixPosition)
+    {
+        ArcherValue = archerValue;
+        BatValue = batValue;
+        KingValue = kingValue;
+        VillageValue = villageValue;
+        KnightValue = knightValue;
+        BaseValue = baseValue;
+
+        MatrixPosition = matrixPosition;
+        this.position = position;
+    }
 }
