@@ -25,6 +25,8 @@ public class Tile : MonoBehaviour
 
 	private AudioSource source;
 
+
+
     private void Start()
     {
 		source = GetComponent<AudioSource>();
@@ -57,7 +59,7 @@ public class Tile : MonoBehaviour
         Village[] villages = FindObjectsOfType<Village>();
         foreach (Village v in villages)
         {            
-            if (Vector2.Distance(transform.position, v.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawn)
+            if (Vector2.Distance(transform.position, v.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawnForVillage/2)
             {
                 isNearToVillage = true;
                 m_nearToBaseIndex = v.playerNumber;
@@ -107,21 +109,30 @@ public class Tile : MonoBehaviour
     
     private void OnMouseDown()
     {
-        if (isWalkable == true) {
+        if (gm.playerTurn == 1) f_Buy_Move();
+    }
+
+    public void f_Buy_Move() {
+        if (isWalkable == true)
+        {
             gm.selectedUnit.Move(this.transform);
-        } else if (isCreatable == true && gm.createdUnit != null) {
+        }
+        else if (isCreatable == true && gm.createdUnit != null)
+        {
             Unit unit = Instantiate(gm.createdUnit, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             unit.hasMoved = true;
             unit.hasAttacked = true;
             gm.ResetTiles();
             gm.createdUnit = null;
-        } else if (isCreatable == true && gm.createdVillage != null) {
-            Instantiate(gm.createdVillage, new Vector3(transform.position.x, transform.position.y, 0) , Quaternion.identity);
+        }
+        else if (isCreatable == true && gm.createdVillage != null)
+        {
+            Village v = Instantiate(gm.createdVillage, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            gm._ia_villages.Add(v);
             gm.ResetTiles();
             gm.createdVillage = null;
         }
     }
-
 
     private void OnMouseEnter()
     {

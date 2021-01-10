@@ -44,11 +44,16 @@ public class Unit : MonoBehaviour
 
 	private AudioSource source;
 
-    public Text displayedText; 
+    //public Text displayedText;
+
+    //IA Variables
+    List<Tile> _tilesReacheable;
 
     private void Start()
     {
-		source = GetComponent<AudioSource>();
+        _tilesReacheable = new List<Tile>();
+
+        source = GetComponent<AudioSource>();
 		camAnim = Camera.main.GetComponent<Animator>();
         gm = FindObjectOfType<GM>();
         UpdateHealthDisplay();
@@ -56,20 +61,21 @@ public class Unit : MonoBehaviour
         //enemy base
         if (playerNumber == 1)
         {
-            enemyBase = GameObject.Find("Blue House");
+            enemyBase = GameObject.Find("Blue Base");
         }
         else
         {
-            enemyBase = GameObject.Find("Dark House");
+            enemyBase = GameObject.Find("Dark Base");
         }
     }
 
     private void UpdateHealthDisplay ()
     {
-        if (isKing)
+        /*if (isKing)
         {
             displayedText.text = health.ToString();
-        }
+        }*/
+        return;
     }
 
     #region Mouse control
@@ -77,19 +83,25 @@ public class Unit : MonoBehaviour
     
     private void OnMouseDown() // select character or deselect if already selected
     {
-        
+        if(gm.playerTurn == 1) f_Select_Unit_attack();
+    }
+
+    public void f_Select_Unit_attack() {
+
         ResetWeaponIcons();
 
         if (isSelected == true)
         {
-            
+
             isSelected = false;
             gm.selectedUnit = null;
             gm.ResetTiles();
 
         }
-        else { //select character
-            if (playerNumber == gm.playerTurn) { // select unit only if it's his turn
+        else
+        { //select character
+            if (playerNumber == gm.playerTurn)
+            { // select unit only if it's his turn
                 if (gm.selectedUnit != null)
                 { // deselect the unit that is currently selected, so there's only one isSelected unit at a time
                     gm.selectedUnit.isSelected = false;
@@ -99,21 +111,20 @@ public class Unit : MonoBehaviour
                 gm.selectedUnit = this;
 
                 isSelected = true;
-				if(source != null){
-					source.Play();
-				}
-				
+                if (source != null)
+                {
+                    source.Play();
+                }
+
                 GetWalkableTiles();
-                GetEnemies();                
+                GetEnemies();
             }
 
         }
 
-
-
         Collider2D col = Physics2D.OverlapCircle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 0.15f);
         if (col != null)
-        {            
+        {
             Unit unit = col.GetComponent<Unit>(); // double check that what we clicked on is a unit
             if (unit != null && gm.selectedUnit != null)
             {
@@ -141,7 +152,7 @@ public class Unit : MonoBehaviour
         if (hasMoved == true) {
             return;
         }
-
+        _tilesReacheable.Clear();
         Tile[] tiles = FindObjectsOfType<Tile>();
         foreach (Tile tile in tiles) {
             if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= tileSpeed)
@@ -149,6 +160,7 @@ public class Unit : MonoBehaviour
                 if (tile.isClear() == true)
                 { // is the tile clear from any obstacles
                     tile.Highlight();
+                    _tilesReacheable.Add(tile);
                 }
 
             }          
@@ -201,16 +213,7 @@ public class Unit : MonoBehaviour
         hasAttacked = true;
 
         int enemyDamage = attackDamage;// - enemyBase.armor;
-        //int unitDamage = enemyBase.defenseDamage - armor;
 
-        /*if (unitDamage >= 1)
-        {
-            health -= unitDamage;
-            UpdateHealthDisplay();
-            DamageIcon d = Instantiate(damageIcon, transform.position, Quaternion.identity);
-            d.Setup(unitDamage);
-        }
-        */
         if (enemyDamage >= 1)
         {
             enemyBase.health -= enemyDamage;
@@ -228,26 +231,6 @@ public class Unit : MonoBehaviour
             DamageIcon d = Instantiate(damageIcon, enemyBase.transform.position, Quaternion.identity);
             d.Setup(enemyDamage);
         }
-
-
-        /*if (health <= 0)
-        {
-
-            if (deathEffect != null)
-            {
-                Instantiate(deathEffect, enemyBase.transform.position, Quaternion.identity);
-                camAnim.SetTrigger("shake");
-            }
-
-            if (isKing)
-            {
-                gm.ShowVictoryPanel(playerNumber);
-            }
-
-            gm.ResetTiles(); // reset tiles when we die
-            gm.RemoveInfoPanel(this);
-            Destroy(gameObject);
-        }*/
     }
 
     void Attack(Unit enemy) {
@@ -294,10 +277,10 @@ public class Unit : MonoBehaviour
 				camAnim.SetTrigger("shake");
 			}
 
-            if (enemy.isKing)
+            /*if (enemy.isKing)
             {
                 gm.ShowVictoryPanel(enemy.playerNumber);
-            }
+            }*/
 
             GetWalkableTiles(); // check for new walkable tiles (if enemy has died we can now walk on his tile)
             gm.RemoveInfoPanel(enemy);
@@ -313,10 +296,10 @@ public class Unit : MonoBehaviour
 				camAnim.SetTrigger("shake");
 			}
 
-			if (isKing)
+			/*if (isKing)
             {
                 gm.ShowVictoryPanel(playerNumber);
-            }
+            }*/
 
             gm.ResetTiles(); // reset tiles when we die
             gm.RemoveInfoPanel(this);
