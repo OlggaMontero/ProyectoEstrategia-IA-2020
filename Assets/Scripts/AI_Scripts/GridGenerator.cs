@@ -11,7 +11,7 @@ public class GridGenerator : MonoBehaviour
     private const int X_SIZE = 19;
     private const int Y_SIZE = 17;
 
-    private Tile[,] grid;
+    private Tile[,] m_SelfGrid, m_EnemyGrid;
 
     public LayerMask obstacleLayer;
     public LayerMask tileLayer;
@@ -32,8 +32,12 @@ public class GridGenerator : MonoBehaviour
     private void Start()
     {
         GetTiles();
-        f_BuildGrid();
-        f_GenerateInfluenceMap();
+
+        f_BuildGridSelf();
+        f_BuildEnemyGrid();
+
+        f_GenerateSelfInfluenceMap();
+        f_GenerateEnemyInfluenceMap();
     }
 
     private void GetTiles()
@@ -41,16 +45,18 @@ public class GridGenerator : MonoBehaviour
         tiles = Tile_Container.GetComponentsInChildren<Tile>();
     }
 
-    private void f_BuildGrid()
-    {
-        grid = new Tile[Y_SIZE, X_SIZE];
+    #region ENEMY INFLUENCE MAP AI
 
-        for (int i = 0; i < grid.GetLength(0); i++)
+    private void f_BuildEnemyGrid()
+    {
+        m_EnemyGrid = new Tile[Y_SIZE, X_SIZE];
+
+        for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
         {
-            for (int j = 0; j < grid.GetLength(1); j++)
+            for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
             {
-                grid[i, j] = tiles[i * X_SIZE + j];
-                grid[i, j].node.MatrixPosition = new Vector2Int(i, j);
+                m_EnemyGrid[i, j] = tiles[i * X_SIZE + j];
+                m_EnemyGrid[i, j].node.MatrixPosition = new Vector2Int(i, j);
             }
         }
     }
@@ -58,109 +64,236 @@ public class GridGenerator : MonoBehaviour
     /// <summary>
     /// Generates the influence map of all units and buildings.
     /// </summary>
-    public void f_GenerateInfluenceMap()
+    public void f_GenerateEnemyInfluenceMap()
     {
-        for (int i = 0; i < grid.GetLength(0); i++)
+        for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
         {
-            for (int j = 0; j < grid.GetLength(1); j++)
+            for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
             {
-                f_ClearNodes(i, j);
+                f_ClearEnemyNodes(i, j);
             }
         }
 
-        for (int i = 0; i < grid.GetLength(0); i++)
+        for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
         {
-            for (int j = 0; j < grid.GetLength(1); j++)
+            for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
             {
-                f_CheckWhatIsInTheTile(i, j);
+                f_CheckWhatIsInTheEnemyTile(i, j);
             }
         }
     }
 
-    private void f_ClearNodes(int i, int j)
+    private void f_ClearEnemyNodes(int i, int j)
     {
-        grid[i, j].node.ArcherValue = 0;
-        grid[i, j].node.BaseValue = 0;
-        grid[i, j].node.KingValue = 0;
-        grid[i, j].node.KnightValue = 0;
-        grid[i, j].node.VillageValue = 0;
-        grid[i, j].node.BatValue = 0;
+        m_EnemyGrid[i, j].node.ArcherValue = 0;
+        m_EnemyGrid[i, j].node.BaseValue = 0;
+        m_EnemyGrid[i, j].node.KingValue = 0;
+        m_EnemyGrid[i, j].node.KnightValue = 0;
+        m_EnemyGrid[i, j].node.VillageValue = 0;
+        m_EnemyGrid[i, j].node.BatValue = 0;
     }
 
-    private void f_CheckWhatIsInTheTile(int x, int y)
+    private void f_CheckWhatIsInTheEnemyTile(int x, int y)
     {
-        Collider2D collider = Physics2D.OverlapCircle(grid[x, y].node.position, .3f, obstacleLayer);
+        Collider2D collider = Physics2D.OverlapCircle(m_EnemyGrid[x, y].node.position, .3f, obstacleLayer);
         if(collider is null)
         {
             return;
         }
-        if (collider.gameObject.name.Contains("Dark Bat"))
+        if (collider.gameObject.name.Contains("Blue Bat"))
         {
-            grid[x, y].node.BatValue = 1;
-            f_MapFlooding(x, y, "Dark Bat");
+            m_EnemyGrid[x, y].node.BatValue = 1;
+            f_EnemyMapFlooding(x, y, "Blue Bat");
         }
-        else if (collider.gameObject.name.Contains("Dark King"))
+        else if (collider.gameObject.name.Contains("Blue King"))
         {
-            grid[x, y].node.KingValue = 1;
-            f_MapFlooding(x, y, "Dark King");
+            m_EnemyGrid[x, y].node.KingValue = 1;
+            f_EnemyMapFlooding(x, y, "Blue King");
         }
-        else if (collider.gameObject.name.Contains("Dark Knight"))
+        else if (collider.gameObject.name.Contains("Blue Knight"))
         {
-            grid[x, y].node.KnightValue = 1;
-            f_MapFlooding(x, y, "Dark Knight");
+            m_EnemyGrid[x, y].node.KnightValue = 1;
+            f_EnemyMapFlooding(x, y, "Blue Knight");
         }
-        else if (collider.gameObject.name.Contains("Dark Archer"))
+        else if (collider.gameObject.name.Contains("Blue Archer"))
         {
-            grid[x, y].node.ArcherValue = 1;
-            f_MapFlooding(x, y, "Dark Archer");
+            m_EnemyGrid[x, y].node.ArcherValue = 1;
+            f_EnemyMapFlooding(x, y, "Blue Archer");
         }
-        else if (collider.gameObject.name.Contains("Dark Village"))
+        else if (collider.gameObject.name.Contains("Blue Village"))
         {
-            grid[x, y].node.VillageValue = 1;
-            f_MapFlooding(x, y, "Dark Village");
+            m_EnemyGrid[x, y].node.VillageValue = 1;
+            f_EnemyMapFlooding(x, y, "Blue Village");
         }
-        else if (collider.gameObject.name.Contains("Dark Base"))
+        else if (collider.gameObject.name.Contains("Blue Base"))
         {
-            grid[x, y].node.BaseValue = 1;
-            f_MapFlooding(x, y, "Dark Base");
+            m_EnemyGrid[x, y].node.BaseValue = 1;
+            f_EnemyMapFlooding(x, y, "Blue Base");
         }
     }
 
-    private void f_MapFlooding(int x, int y, string typeOfUnit)
+    private void f_EnemyMapFlooding(int x, int y, string typeOfUnit)
     {
-        Collider2D[] collidersOfTile = Physics2D.OverlapCircleAll(grid[x, y].node.position, 4.5f, tileLayer);
+        Collider2D[] collidersOfTile = Physics2D.OverlapCircleAll(m_EnemyGrid[x, y].node.position, 4.5f, tileLayer);
 
         foreach (var c in collidersOfTile)
         {
             Tile tile = c.gameObject.GetComponent<Tile>();
 
-            float distance = Vector2.Distance(grid[x, y].node.position, grid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.position);
+            float distance = Vector2.Distance(m_EnemyGrid[x, y].node.position, m_EnemyGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.position);
 
             switch (typeOfUnit)
             {
-                case "Dark Bat":
-                    grid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.BatValue += f_ChangeUnitValue(grid[x, y].node.BatValue, distance);
+                case "Blue Bat":
+                    m_EnemyGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.BatValue += f_ChangeUnitValue(m_EnemyGrid[x, y].node.BatValue, distance);
                     break;
-                case "Dark King":
-                    grid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.KingValue += f_ChangeUnitValue(grid[x, y].node.KingValue, distance);
+                case "Blue King":
+                    m_EnemyGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.KingValue += f_ChangeUnitValue(m_EnemyGrid[x, y].node.KingValue, distance);
                     break;
-                case "Dark Knight":
-                    grid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.KnightValue += f_ChangeUnitValue(grid[x, y].node.KnightValue, distance);
+                case "Blue Knight":
+                    m_EnemyGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.KnightValue += f_ChangeUnitValue(m_EnemyGrid[x, y].node.KnightValue, distance);
                     break;
-                case "Dark Archer":
-                    grid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.ArcherValue += f_ChangeUnitValue(grid[x, y].node.ArcherValue, distance);
+                case "Blue Archer":
+                    m_EnemyGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.ArcherValue += f_ChangeUnitValue(m_EnemyGrid[x, y].node.ArcherValue, distance);
                     break;
-                case "Dark Village":
-                    grid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.VillageValue += f_ChangeUnitValue(grid[x, y].node.VillageValue, distance);
+                case "Blue Village":
+                    m_EnemyGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.VillageValue += f_ChangeUnitValue(m_EnemyGrid[x, y].node.VillageValue, distance);
                     break;
-                case "Dark Base":
-                    grid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.BaseValue += f_ChangeUnitValue(grid[x, y].node.BaseValue, distance);
+                case "Blue Base":
+                    m_EnemyGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.BaseValue += f_ChangeUnitValue(m_EnemyGrid[x, y].node.BaseValue, distance);
                     break;
                 default:
                     break;
             }
         }
     }
+
+    #endregion
+
+    #region SELF INFLUENCE MAP AI
+
+    private void f_BuildGridSelf()
+    {
+        m_SelfGrid = new Tile[Y_SIZE, X_SIZE];
+
+        for (int i = 0; i < m_SelfGrid.GetLength(0); i++)
+        {
+            for (int j = 0; j < m_SelfGrid.GetLength(1); j++)
+            {
+                m_SelfGrid[i, j] = tiles[i * X_SIZE + j];
+                m_SelfGrid[i, j].node.MatrixPosition = new Vector2Int(i, j);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Generates the influence map of all units and buildings.
+    /// </summary>
+    public void f_GenerateSelfInfluenceMap()
+    {
+        for (int i = 0; i < m_SelfGrid.GetLength(0); i++)
+        {
+            for (int j = 0; j < m_SelfGrid.GetLength(1); j++)
+            {
+                f_ClearSelfNodes(i, j);
+            }
+        }
+
+        for (int i = 0; i < m_SelfGrid.GetLength(0); i++)
+        {
+            for (int j = 0; j < m_SelfGrid.GetLength(1); j++)
+            {
+                f_CheckWhatIsInTheSelfTile(i, j);
+            }
+        }
+    }
+
+    private void f_ClearSelfNodes(int i, int j)
+    {
+        m_SelfGrid[i, j].node.ArcherValue = 0;
+        m_SelfGrid[i, j].node.BaseValue = 0;
+        m_SelfGrid[i, j].node.KingValue = 0;
+        m_SelfGrid[i, j].node.KnightValue = 0;
+        m_SelfGrid[i, j].node.VillageValue = 0;
+        m_SelfGrid[i, j].node.BatValue = 0;
+    }
+
+    private void f_CheckWhatIsInTheSelfTile(int x, int y)
+    {
+        Collider2D collider = Physics2D.OverlapCircle(m_SelfGrid[x, y].node.position, .3f, obstacleLayer);
+        if (collider is null)
+        {
+            return;
+        }
+        if (collider.gameObject.name.Contains("Dark Bat"))
+        {
+            m_SelfGrid[x, y].node.BatValue = 1;
+            f_SelfMapFlooding(x, y, "Dark Bat");
+        }
+        else if (collider.gameObject.name.Contains("Dark King"))
+        {
+            m_SelfGrid[x, y].node.KingValue = 1;
+            f_SelfMapFlooding(x, y, "Dark King");
+        }
+        else if (collider.gameObject.name.Contains("Dark Knight"))
+        {
+            m_SelfGrid[x, y].node.KnightValue = 1;
+            f_SelfMapFlooding(x, y, "Dark Knight");
+        }
+        else if (collider.gameObject.name.Contains("Dark Archer"))
+        {
+            m_SelfGrid[x, y].node.ArcherValue = 1;
+            f_SelfMapFlooding(x, y, "Dark Archer");
+        }
+        else if (collider.gameObject.name.Contains("Dark Village"))
+        {
+            m_SelfGrid[x, y].node.VillageValue = 1;
+            f_SelfMapFlooding(x, y, "Dark Village");
+        }
+        else if (collider.gameObject.name.Contains("Dark Base"))
+        {
+            m_SelfGrid[x, y].node.BaseValue = 1;
+            f_SelfMapFlooding(x, y, "Dark Base");
+        }
+    }
+
+    private void f_SelfMapFlooding(int x, int y, string typeOfUnit)
+    {
+        Collider2D[] collidersOfTile = Physics2D.OverlapCircleAll(m_SelfGrid[x, y].node.position, 4.5f, tileLayer);
+
+        foreach (var c in collidersOfTile)
+        {
+            Tile tile = c.gameObject.GetComponent<Tile>();
+
+            float distance = Vector2.Distance(m_SelfGrid[x, y].node.position, m_SelfGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.position);
+
+            switch (typeOfUnit)
+            {
+                case "Dark Bat":
+                    m_SelfGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.BatValue += f_ChangeUnitValue(m_SelfGrid[x, y].node.BatValue, distance);
+                    break;
+                case "Dark King":
+                    m_SelfGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.KingValue += f_ChangeUnitValue(m_SelfGrid[x, y].node.KingValue, distance);
+                    break;
+                case "Dark Knight":
+                    m_SelfGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.KnightValue += f_ChangeUnitValue(m_SelfGrid[x, y].node.KnightValue, distance);
+                    break;
+                case "Dark Archer":
+                    m_SelfGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.ArcherValue += f_ChangeUnitValue(m_SelfGrid[x, y].node.ArcherValue, distance);
+                    break;
+                case "Dark Village":
+                    m_SelfGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.VillageValue += f_ChangeUnitValue(m_SelfGrid[x, y].node.VillageValue, distance);
+                    break;
+                case "Dark Base":
+                    m_SelfGrid[tile.node.MatrixPosition.x, tile.node.MatrixPosition.y].node.BaseValue += f_ChangeUnitValue(m_SelfGrid[x, y].node.BaseValue, distance);
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    #endregion
 
     private float f_ChangeUnitValue(float value, float distance)
     {
