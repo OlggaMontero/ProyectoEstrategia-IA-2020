@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GM : MonoBehaviour
 {
@@ -41,9 +42,30 @@ public class GM : MonoBehaviour
 
 	private AudioSource source;
 
+    //IA stuff
+    private CharacterCreation _ch_Craeation;
+
+    public Unit _blue_archer;
+    public Unit _blue_bat;
+    public Unit _blue_knight;
+    public Village _blue_village;
+
+    private House _ia_house;
+    private House _player_house;
+    private List<Unit> _ia_units;
+    public List<Village> _ia_villages;
+
     private void Start()
     {
-		source = GetComponent<AudioSource>();
+        _ch_Craeation = GetComponent<CharacterCreation>();
+        House[] bases = FindObjectsOfType<House>();
+        foreach (House b in bases)
+        {
+            if (b.playerNumber == 2) _ia_house = b;
+            else _player_house = b;
+        }
+        _ia_units = new List<Unit>();
+        source = GetComponent<AudioSource>();
         camAnim = Camera.main.GetComponent<Animator>();
         GetGoldIncome(1);
     }
@@ -120,8 +142,8 @@ public class GM : MonoBehaviour
             tile.Reset();
         }
     }
-    public void EndTurn() {
-		source.Play();
+    public void EndTurn() {        
+        source.Play();
         camAnim.SetTrigger("shake");
 
         // deselects the selected unit when the turn ends
@@ -151,6 +173,74 @@ public class GM : MonoBehaviour
         GetGoldIncome(playerTurn);
         GetComponent<CharacterCreation>().CloseCharacterCreationMenus();
         createdUnit = null;
+        createdVillage = null; 
+
+        if (playerTurn == 2)
+        {
+            f_GetUnits();
+            DoIaStuff();
+        }
+    }
+
+    /// <summary>
+    /// Arbol de decisiones que decide cosas que se han de decidir
+    /// </summary>
+    private void DoIaStuff()
+    {
+
+        if (_ia_villages.Count < 3 && player2Gold > 100) f_Buy_Village();
+        if (_ia_units.Count < 3 && player2Gold > 40) f_Buy_Unit();
+
+
+        //IA Functions
+        //In Tile: f_Buy_Move()
+        //In Unit: f_Select_Unit_attack(); Attack(Unit enemy); AttackBase(House enemyBase); (bool)m_enemyBaseInRange; (list)_tilesReacheable;
+        //In CharacterCreation: BuyUnit(Unit Unit); BuyVillage(Village village);
+        //createdUnit: _blue_archer; _blue_bat; _blue_knight;
+        //createdVillage: _blue_village;
+        //(list) _ia_units;
+        //(House) _ia_House;
+        //player2Gold;
+    }
+
+    private void f_GetUnits()
+    {
+        _ia_units.Clear();
+        Unit[] units = FindObjectsOfType<Unit>();
+        foreach(Unit unit in units)
+        {
+            if(unit.playerNumber == 2)
+            {
+                _ia_units.Add(unit);
+            }
+        }
+    }
+
+    private void f_Buy_Village()
+    {
+        _ch_Craeation.BuyVillage(_blue_village);
+        Tile spawn_tile = null;
+        foreach(Tile t in _ch_Craeation._tiles_to_place_things)
+        {
+            if (spawn_tile != null && Vector2.Distance(_player_house.transform.position, t.transform.position) < Vector2.Distance(_player_house.transform.position, spawn_tile.transform.position)) //Distancia mas proxima a la base enemiga
+                spawn_tile = t;
+        }
+        spawn_tile.f_Buy_Move();
+    }
+
+    private void f_Buy_Unit()
+    {
+        if (player2Gold >= 80) _ch_Craeation.BuyUnit(_blue_bat);
+        else if(player2Gold >= 70) _ch_Craeation.BuyUnit(_blue_archer);
+        else _ch_Craeation.BuyUnit(_blue_knight);
+
+        Tile spawn_tile = null;
+        foreach (Tile t in _ch_Craeation._tiles_to_place_things)
+        {
+            if (spawn_tile != null && Vector2.Distance(_player_house.transform.position, t.transform.position) < Vector2.Distance(_player_house.transform.position, spawn_tile.transform.position)) //DECIDIR CON MAPA DE INFLUENCIA-----------------------------!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
+                spawn_tile = t;
+        }
+        spawn_tile.f_Buy_Move();
     }
 
     /// <summary>
