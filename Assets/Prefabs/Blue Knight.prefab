@@ -613,6 +613,8 @@ MonoBehaviour:
   deathEffect: {fileID: 8882834092664154197, guid: 43e58a09770a414488a4edf9a2bb5ea7,
     type: 3}
   isKing: 0
+  _tilesReacheable: []
+  viewRadius: 3
 --- !u!114 &1584046052
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,12 +71,20 @@ public class GM : MonoBehaviour
     {
         _state = "Normal";
         _ch_Craeation = GetComponent<CharacterCreation>();
+
+        FogTiles();
+        Unit[] units = FindObjectsOfType<Unit>();
         House[] bases = FindObjectsOfType<House>();
         foreach (House b in bases)
         {
             if (b.playerNumber == 2) _ia_house = b;
             else _player_house = b;
         }
+        House[] houses = FindObjectsOfType<House>();
+        Village[] villages = FindObjectsOfType<Village>();
+        MostrarUnidadesJugador(units, villages, houses);
+        CompruebaVisionUnidades(units, villages, houses);
+
         _ia_units = new List<Unit>();
         source = GetComponent<AudioSource>();
         camAnim = Camera.main.GetComponent<Animator>();
@@ -163,6 +171,7 @@ public class GM : MonoBehaviour
             tile.Reset();
         }
     }
+
     public void EndTurn() {        
         source.Play();
         camAnim.SetTrigger("shake");
@@ -183,6 +192,9 @@ public class GM : MonoBehaviour
             unit.ResetWeaponIcons();
         }
 
+        Village[] villages = FindObjectsOfType<Village>();
+        House[] houses = FindObjectsOfType<House>();
+
         if (playerTurn == 1) {
             playerIcon.sprite = playerTwoIcon;
             playerTurn = 2;
@@ -190,6 +202,10 @@ public class GM : MonoBehaviour
             playerIcon.sprite = playerOneIcon;
             playerTurn = 1;
         }
+
+        FogTiles();
+        MostrarUnidadesJugador(units, villages, houses);
+        CompruebaVisionUnidades(units, villages, houses);
 
         GetGoldIncome(playerTurn);
         GetComponent<CharacterCreation>().CloseCharacterCreationMenus();
@@ -232,7 +248,7 @@ public class GM : MonoBehaviour
         else
             _state = "Attack";
 
-        print(_state);
+        //print(_state);
 
         //Fase de compra
         f_Buy_Stage();
@@ -408,7 +424,6 @@ public class GM : MonoBehaviour
         if (!iaUnit.isSelected) iaUnit.f_Select_Unit_attack();
         //List<Tile> aux_Destinies = new List<Tile>(); //prueba borrable
         Tile t_destiny = null;
-        Debug.LogError("Hola");
         Tile aux_base = null;
         bool near_Influence = false;
         foreach (Tile t in iaUnit._tilesReacheable) //Elijo hacia que unidad me muevo
@@ -477,7 +492,7 @@ public class GM : MonoBehaviour
         }
         if (t_destiny is null /*|| Vector2.Distance(t_destiny.transform.position, iaUnit.transform.position) < 0.8*/) //Quiero evitar que se mueva a la casilla sobre la que ya esta pero en principio esa ni esta en la lista
         {
-            print("No ha encontrado destino");
+            //print("No ha encontrado destino");
             ResetTiles();
             iaUnit.FinishgMovement();
             iaUnit.hasAttacked = true;
@@ -561,5 +576,88 @@ public class GM : MonoBehaviour
     /// </summary>
     public void RestartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MostrarUnidadesJugador(Unit[] unidades, Village[] villages, House[] houses)
+    {
+        foreach (Unit unit in unidades)
+        {
+            if (playerTurn == unit.playerNumber)
+            {
+                unit.Mostrar();
+            }
+            else
+            {
+                unit.Esconder();
+            }
+            unit.ResetVision();
+
+        }
+
+        foreach (Village village in villages)
+        {
+            if (playerTurn == village.playerNumber)
+            {
+                village.Mostrar();
+            }
+            else
+            {
+                village.Esconder();
+            }
+            village.ResetVision();
+        }
+
+        foreach (House house in houses)
+        {
+            if (playerTurn == house.playerNumber)
+            {
+                house.Mostrar();
+            }
+            else
+            {
+                house.Esconder();
+            }
+            house.ResetVision();
+        }
+    }
+
+    public void CompruebaVisionUnidades(Unit[] unidades, Village[] villages, House[] houses)
+    {
+        foreach (Unit unit in unidades)
+        {
+            if (playerTurn == unit.playerNumber)
+            {
+                unit.GetVisibleEnemies();
+                unit.VisibleTiles();
+            }
+        }
+
+        foreach (House house in houses)
+        {
+            if (playerTurn == house.playerNumber)
+            {
+                house.GetVisibleEnemies();
+                house.VisibleTiles();
+            }
+        }
+
+        foreach (Village village in villages)
+        {
+            if (playerTurn == village.playerNumber)
+            {
+                village.GetVisibleEnemies();
+                village.VisibleTiles();
+            }
+        }
+    }
+
+    public void FogTiles()
+    {
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile tile in tiles)
+        {
+            tile.ResetVision();
+            tile.Esconder();
+        }
     }
 }

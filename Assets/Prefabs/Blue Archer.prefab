@@ -668,6 +668,7 @@ MonoBehaviour:
     type: 3}
   isKing: 0
   _tilesReacheable: []
+  viewRadius: 6
 --- !u!61 &626269173632994739
 BoxCollider2D:
   m_ObjectHideFlags: 0

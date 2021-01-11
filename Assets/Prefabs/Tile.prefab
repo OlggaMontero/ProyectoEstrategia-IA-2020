@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f49ac6df973c524ea37754f73574ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rend: {fileID: 0}
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
   obstacles:
@@ -255,3 +256,4 @@ MonoBehaviour:
   isNearToBaseVillage: 0
   m_nearToBaseIndex: 0
   amount: 0.025
+  fogColor: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}

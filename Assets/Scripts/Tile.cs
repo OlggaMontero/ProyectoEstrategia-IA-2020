@@ -28,6 +28,11 @@ public class Tile : MonoBehaviour
     public BoxNode m_SelfNode;
     public BoxNode m_EnemyNode;
 
+
+    public Color fogColor;
+
+    private int unidadesViendome;
+
     private void Start()
     {
 		source = GetComponent<AudioSource>();
@@ -104,7 +109,10 @@ public class Tile : MonoBehaviour
 
     public void Reset()
     {
-        rend.color = Color.white;
+        if (unidadesViendome >= 1)
+        {
+            rend.color = Color.white;
+        }
         isWalkable = false;
         isCreatable = false;
     }
@@ -164,5 +172,54 @@ public class Tile : MonoBehaviour
             sizeIncrease = false;
             transform.localScale -= new Vector3(amount, amount, amount);
         }
+    }
+
+    public void VistoPorUnidad()
+    {
+        unidadesViendome += 1;
+        if (unidadesViendome >= 1)
+        {
+            Mostrar();
+        }
+        if (unidadesViendome < 0)
+        {
+            Debug.Log("bug -> tile.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void DesvistoPorUnidad()
+    {
+        unidadesViendome -= 1;
+        if (unidadesViendome == 0)
+        {
+            Esconder();
+        }
+        if (unidadesViendome < 0)
+        {
+            Debug.Log("bug -> tile.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void Mostrar()
+    {
+        if (rend == null)
+        {
+            rend = GetComponent<SpriteRenderer>();
+        }
+        rend.color = Color.white;
+    }
+
+    public void Esconder()
+    {
+        if (rend == null)
+        {
+            rend = GetComponent<SpriteRenderer>();
+        }
+        rend.color = fogColor;
+    }
+
+    public void ResetVision()
+    {
+        unidadesViendome = 0;
     }
 }
