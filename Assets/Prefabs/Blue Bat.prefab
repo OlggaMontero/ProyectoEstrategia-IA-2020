@@ -47,7 +47,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -128,7 +127,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -189,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3831706680463763197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8533874, y: 1.066736, z: 0}
+  m_LocalPosition: {x: 0.8533874, y: 1.0667362, z: 0}
   m_LocalScale: {x: -1.0329226, y: 1.0200111, z: 1.0329225}
   m_Children: []
   m_Father: {fileID: 3831706679602439531}
@@ -209,7 +207,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -291,7 +288,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -373,7 +369,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -484,7 +479,6 @@ MonoBehaviour:
   tileSpeed: 4
   moveSpeed: 10
   attackRadius: 1
-  viewRadius: 8
   hasAttacked: 0
   enemiesInRange: []
   playerNumber: 2
@@ -493,16 +487,12 @@ MonoBehaviour:
   attackDamage: 4
   defenseDamage: 3
   armor: 2
-  m_enemyBaseInRange: 0
-  enemyBase: {fileID: 0}
   damageIcon: {fileID: -5891122600849735030, guid: eb780ffd3e6d6b64d993bc8583781d30,
     type: 3}
   cost: 80
   deathEffect: {fileID: 8882834092664154197, guid: 43e58a09770a414488a4edf9a2bb5ea7,
     type: 3}
   isKing: 0
-  displayedText: {fileID: 0}
-  fieldOfView: {fileID: 0}
 --- !u!61 &3831706681586816674
 BoxCollider2D:
   m_ObjectHideFlags: 0

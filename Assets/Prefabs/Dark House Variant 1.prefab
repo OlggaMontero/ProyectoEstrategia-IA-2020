@@ -15,12 +15,12 @@ PrefabInstance:
     - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
         type: 3}
@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 5915751925507380093, guid: 3a7f9032994daa748afb1fd85d4efb50,
         type: 3}
       propertyPath: m_Name
-      value: Dark House
+      value: Dark Base
       objectReference: {fileID: 0}
     - target: {fileID: 5915751926383272775, guid: 3a7f9032994daa748afb1fd85d4efb50,
         type: 3}

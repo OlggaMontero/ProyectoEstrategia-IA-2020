@@ -597,7 +597,6 @@ MonoBehaviour:
   tileSpeed: 2
   moveSpeed: 10
   attackRadius: 1
-  viewRadius: 4
   hasAttacked: 0
   enemiesInRange: []
   playerNumber: 2
@@ -614,8 +613,6 @@ MonoBehaviour:
   deathEffect: {fileID: 8882834092664154197, guid: 43e58a09770a414488a4edf9a2bb5ea7,
     type: 3}
   isKing: 0
-  displayedText: {fileID: 0}
-  fieldOfView: {fileID: 0}
 --- !u!114 &1584046052
 MonoBehaviour:
   m_ObjectHideFlags: 0

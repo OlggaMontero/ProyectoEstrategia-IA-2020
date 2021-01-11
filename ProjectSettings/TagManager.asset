@@ -17,8 +17,8 @@ TagManager:
   - 
   - Tile
   - Obstacle
-  - FogOfWarMain
-  - FogOfWarSecondary
+  - 
+  - 
   - 
   - 
   - 
@@ -48,7 +48,4 @@ TagManager:
     locked: 0
   - name: Sky
     uniqueID: 537989683
-    locked: 0
-  - name: FogOfWar
-    uniqueID: 943648013
     locked: 0

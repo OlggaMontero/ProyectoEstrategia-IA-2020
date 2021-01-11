@@ -316,7 +316,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -838988493365444387, guid: 17fd67ba01aab994d8b6a80c6b728376,
     type: 3}
-  m_Color: {r: 1, g: 0.9104993, b: 0, a: 0.21568628}
+  m_Color: {r: 0, g: 0.98959446, b: 1, a: 0.21568628}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -631,12 +631,11 @@ MonoBehaviour:
   tileSpeed: 2
   moveSpeed: 10
   attackRadius: 1
-  viewRadius: 5
   hasAttacked: 0
   enemiesInRange: []
   playerNumber: 2
   weaponIcon: {fileID: 179943396338207515}
-  health: 20
+  health: 15
   attackDamage: 5
   defenseDamage: 4
   armor: 1
@@ -648,8 +647,6 @@ MonoBehaviour:
   deathEffect: {fileID: 8882834092664154197, guid: 43e58a09770a414488a4edf9a2bb5ea7,
     type: 3}
   isKing: 1
-  displayedText: {fileID: 0}
-  fieldOfView: {fileID: 0}
 --- !u!114 &179943397156523650
 MonoBehaviour:
   m_ObjectHideFlags: 0
