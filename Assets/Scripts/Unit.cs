@@ -351,15 +351,15 @@ public class Unit : MonoBehaviour
 
         while (transform.position.x != movePos.position.x) { // first aligns him with the new tile's x pos
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(movePos.position.x, transform.position.y), moveSpeed * Time.deltaTime);
-            GetVisibleEnemies();
-            VisibleTiles();
+            //GetVisibleEnemies();
+            //VisibleTiles();
             yield return null;
         }
         while (transform.position.y != movePos.position.y) // then y
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, movePos.position.y), moveSpeed * Time.deltaTime);
-            GetVisibleEnemies();
-            VisibleTiles();
+            //GetVisibleEnemies();
+            //VisibleTiles();
             yield return null;
         }
 
@@ -377,7 +377,7 @@ public class Unit : MonoBehaviour
         hasMoved = true;
     }
 
-    public void VisibleTiles()
+    /*public void VisibleTiles()
     {
         Tile[] tiles = FindObjectsOfType<Tile>();
         foreach (Tile tile in tiles)
@@ -539,5 +539,5 @@ public class Unit : MonoBehaviour
         enemigosQueMeVen = 0;
         objetosVistos.Clear();
         tilesVistos.Clear();
-    }
+    }*/
 }

@@ -14,7 +14,7 @@ public class Village : MonoBehaviour
     private HashSet<GameObject> tilesVistos = new HashSet<GameObject>();
     public int viewRadius = 2;
 
-    public void GetVisibleEnemies()
+    /*public void GetVisibleEnemies()
     {
         GM gm = FindObjectOfType<GM>();
 
@@ -126,5 +126,5 @@ public class Village : MonoBehaviour
         enemigosQueMeVen = 0;
         enemigosVistos.Clear();
         tilesVistos.Clear();
-    }
+    }*/
 }

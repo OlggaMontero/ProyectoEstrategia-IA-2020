@@ -109,10 +109,10 @@ public class Tile : MonoBehaviour
 
     public void Reset()
     {
-        if (unidadesViendome >= 1)
+        /*if (unidadesViendome >= 1)
         {
             rend.color = Color.white;
-        }
+        }*/
         isWalkable = false;
         isCreatable = false;
     }
@@ -174,7 +174,7 @@ public class Tile : MonoBehaviour
         }
     }
 
-    public void VistoPorUnidad()
+    /*public void VistoPorUnidad()
     {
         unidadesViendome += 1;
         if (unidadesViendome >= 1)
@@ -221,5 +221,5 @@ public class Tile : MonoBehaviour
     public void ResetVision()
     {
         unidadesViendome = 0;
-    }
+    }*/
 }

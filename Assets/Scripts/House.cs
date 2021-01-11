@@ -57,7 +57,7 @@ public class House : MonoBehaviour
         displayedText.text = health.ToString();
     }
 
-    public void GetVisibleEnemies()
+    /*public void GetVisibleEnemies()
     {
         Unit[] enemies = FindObjectsOfType<Unit>();
         foreach (Unit enemy in enemies)
@@ -159,5 +159,5 @@ public class House : MonoBehaviour
         enemigosQueMeVen = 0;
         enemigosVistos.Clear();
         tilesVistos.Clear();
-    }
+    }*/
 }
