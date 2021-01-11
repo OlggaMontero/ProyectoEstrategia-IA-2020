@@ -21353,6 +21353,7 @@ GameObject:
   - component: {fileID: 1748616106}
   - component: {fileID: 1748616105}
   - component: {fileID: 1748616104}
+  - component: {fileID: 1748616108}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -21414,7 +21415,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.81
+  orthographic size: 3.12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -21438,12 +21439,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748616103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 2.25, z: -10}
+  m_LocalPosition: {x: 0, y: 2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1748616108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748616103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4986b5e21d2098541aad80c470a252e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 8
+  topBarrier: 0.97
+  botBarrier: 0.03
+  leftBarrier: 0.97
+  rightBarrier: 0.03
+  topLimit: 8
+  botLimit: -4
+  leftLimit: 0
+  rightLimit: 10
 --- !u!4 &1749455763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7303139465636383203, guid: d0745185e498645d1b87c30c3d4a70aa,
