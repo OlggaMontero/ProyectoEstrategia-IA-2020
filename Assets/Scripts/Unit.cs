@@ -47,7 +47,7 @@ public class Unit : MonoBehaviour
     //public Text displayedText;
 
     //IA Variables
-    List<Tile> _tilesReacheable;
+    public List<Tile> _tilesReacheable;
 
     private void Start()
     {
@@ -233,7 +233,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    void Attack(Unit enemy) {
+    public void Attack(Unit enemy) {
         hasAttacked = true;
 
         int enemyDamege = attackDamage - enemy.armor;
@@ -340,13 +340,9 @@ public class Unit : MonoBehaviour
             yield return null;
         }
 
-        hasMoved = true;
         ResetWeaponIcons();
         GetEnemies();
         gm.MoveInfoPanel(this);
+        hasMoved = true;
     }
-
-
-
-
 }

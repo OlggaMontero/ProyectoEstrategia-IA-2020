@@ -44,6 +44,15 @@ public class GM : MonoBehaviour
 
     //IA stuff
     private CharacterCreation _ch_Craeation;
+    private string _state; //"Normal", "Attack", "Defend"
+
+    private float timeToPassToNextUnit = 0;
+    private bool timer = false;
+
+    [Header ("Change the AI State to Defend")]
+    [SerializeField] private float minimumDistanceOfEnemiesToBase;
+    [SerializeField] private int numberOfEnemiesNearToBase;
+    [Space (20)]
 
     public Unit _blue_archer;
     public Unit _blue_bat;
@@ -53,10 +62,12 @@ public class GM : MonoBehaviour
     private House _ia_house;
     private House _player_house;
     private List<Unit> _ia_units;
+    private Unit[] _ia_units_array;
     public List<Village> _ia_villages;
 
     private void Start()
     {
+        _state = "Normal";
         _ch_Craeation = GetComponent<CharacterCreation>();
         House[] bases = FindObjectsOfType<House>();
         foreach (House b in bases)
@@ -72,7 +83,7 @@ public class GM : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b")) {
+        if (/*playerTurn == 1 && */(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b"))) {
             EndTurn();
         }
 
@@ -86,6 +97,14 @@ public class GM : MonoBehaviour
             selectedUnitSquare.gameObject.SetActive(false);
         }
 
+        if (timer)
+        {
+            timeToPassToNextUnit += Time.deltaTime;
+        }
+        else
+        {
+            timeToPassToNextUnit = 0;
+        }
     }
 
     // Sets panel active/inactive and moves it to the correct place
@@ -173,7 +192,9 @@ public class GM : MonoBehaviour
         GetGoldIncome(playerTurn);
         GetComponent<CharacterCreation>().CloseCharacterCreationMenus();
         createdUnit = null;
-        createdVillage = null; 
+        createdVillage = null;
+
+        GridGenerator.instance.f_GenerateEnemyInfluenceMap();
 
         if (playerTurn == 2)
         {
@@ -182,27 +203,96 @@ public class GM : MonoBehaviour
         }
     }
 
+    //IA Functions
+    //In Tile: f_Buy_Move()
+    //In Unit: f_Select_Unit_attack(); Attack(Unit enemy); AttackBase(House enemyBase); (bool)m_enemyBaseInRange; (list)_tilesReacheable;
+    //In CharacterCreation: BuyUnit(Unit Unit); BuyVillage(Village village);
+    //createdUnit: _blue_archer; _blue_bat; _blue_knight;
+    //createdVillage: _blue_village;
+    //(list) _ia_units;
+    //(House) _ia_House;
+    //player2Gold;
+
     /// <summary>
     /// Arbol de decisiones que decide cosas que se han de decidir
     /// </summary>
     private void DoIaStuff()
     {
+        //Compruebo el cambio de estado
+        int enemiesNearBase = 0;
+        Unit[] enemies = FindObjectsOfType<Unit>();
+        foreach (Unit enemy in enemies)
+            if (enemy.playerNumber != playerTurn && Vector2.Distance(_ia_house.transform.position, enemy.transform.position) < minimumDistanceOfEnemiesToBase) // check is the enemy is near enough to base
+                enemiesNearBase++;
 
-        if (_ia_villages.Count < 3 && player2Gold > 100) f_Buy_Village();
-        if (_ia_units.Count < 3 && player2Gold > 40) f_Buy_Unit();
+        if (enemiesNearBase > numberOfEnemiesNearToBase)
+            _state = "Defend";
+        else
+            _state = "Attack";
+
+        print(_state);
+
+        //Fase de compra
+        f_Buy_Stage();
 
 
-        //IA Functions
-        //In Tile: f_Buy_Move()
-        //In Unit: f_Select_Unit_attack(); Attack(Unit enemy); AttackBase(House enemyBase); (bool)m_enemyBaseInRange; (list)_tilesReacheable;
-        //In CharacterCreation: BuyUnit(Unit Unit); BuyVillage(Village village);
-        //createdUnit: _blue_archer; _blue_bat; _blue_knight;
-        //createdVillage: _blue_village;
-        //(list) _ia_units;
-        //(House) _ia_House;
-        //player2Gold;
+        //Units behaviour
+        Unit aux = null;
+
+        for (int i = 0; i < _ia_units_array.Length; i++)
+        {
+            if (_ia_units_array[i].enemiesInRange.Count <= 0 || _ia_units_array[i].m_enemyBaseInRange)
+            {
+                if (i > 0)
+                    StartCoroutine(WaitToExecute(aux, _ia_units_array[i], "Move")); //COMO COÑO PUEDE DAR ESTO OUT OF RANGE???? ME LO EXPLICAIS?????
+                else
+                    f_ia_Move(_ia_units_array[i]);
+            }
+            else
+            {
+                if(i > 0)
+                    StartCoroutine(WaitToExecute(aux, _ia_units_array[i], "Attack"));
+                else
+                    f_ia_Attack(_ia_units_array[i]);
+            }
+            aux = _ia_units_array[i];
+        }
+        //Acaba el turno cuando haya terminado su accion la ultima unidad
+        StartCoroutine(WaitToEndTurn(aux, () => EndTurn()));
     }
 
+    IEnumerator WaitToEndTurn(Unit iaUnit, Action FirstAction) //La siguiente Funcion se ejecuta cuando haya acabado la anterior la anterior unidad su accion
+    {
+        if(iaUnit != null)
+        {
+            yield return new WaitUntil(() => iaUnit.hasMoved || iaUnit.hasAttacked);
+            yield return new WaitForSeconds(1f);
+        }
+        FirstAction();
+    }
+
+    IEnumerator WaitToExecute(Unit iaUnitToWait, Unit iaUnit, string action) //La siguiente Funcion se ejecuta cuando haya acabado la anterior la anterior unidad su accion
+    {
+        if (iaUnitToWait != null)
+        {
+            yield return new WaitUntil(() => iaUnitToWait.hasMoved || iaUnitToWait.hasAttacked);
+            yield return new WaitForSeconds(0.5f);
+        }
+        if (action.Equals("Move"))
+            f_ia_Move(iaUnit);
+        else
+            f_ia_Attack(iaUnit);
+    }
+
+    private void f_Buy_Stage()
+    {
+        if (_ia_villages.Count < 3 && player2Gold >= 100) f_Buy_Village();
+        if (_ia_units.Count < 3 && player2Gold >= 40) f_Buy_Unit(false);
+        if (player2Gold >= 500) while (player2Gold > 200) { f_Buy_Unit(true); }
+        else if (player2Gold >= 400) { f_Buy_Unit(true); }
+        else if (player2Gold >= 270 && _ia_units.Count < 6) f_Buy_Unit(true);
+        else if (player2Gold >= 250 && _ia_villages.Count < 5) f_Buy_Village();
+    }
     private void f_GetUnits()
     {
         _ia_units.Clear();
@@ -214,6 +304,7 @@ public class GM : MonoBehaviour
                 _ia_units.Add(unit);
             }
         }
+        _ia_units_array = _ia_units.ToArray();
     }
 
     private void f_Buy_Village()
@@ -222,25 +313,183 @@ public class GM : MonoBehaviour
         Tile spawn_tile = null;
         foreach(Tile t in _ch_Craeation._tiles_to_place_things)
         {
-            if (spawn_tile != null && Vector2.Distance(_player_house.transform.position, t.transform.position) < Vector2.Distance(_player_house.transform.position, spawn_tile.transform.position)) //Distancia mas proxima a la base enemiga
+            if (spawn_tile == null || Vector2.Distance(_player_house.transform.position, t.transform.position) < Vector2.Distance(_player_house.transform.position, spawn_tile.transform.position)) //Distancia mas proxima a la base enemiga
                 spawn_tile = t;
         }
-        spawn_tile.f_Buy_Move();
+        if(spawn_tile != null) spawn_tile.f_Buy_Move();
     }
 
-    private void f_Buy_Unit()
+    private void f_Buy_Unit(bool random)
     {
-        if (player2Gold >= 80) _ch_Craeation.BuyUnit(_blue_bat);
-        else if(player2Gold >= 70) _ch_Craeation.BuyUnit(_blue_archer);
-        else _ch_Craeation.BuyUnit(_blue_knight);
-
-        Tile spawn_tile = null;
-        foreach (Tile t in _ch_Craeation._tiles_to_place_things)
+        if (random)
         {
-            if (spawn_tile != null && Vector2.Distance(_player_house.transform.position, t.transform.position) < Vector2.Distance(_player_house.transform.position, spawn_tile.transform.position)) //DECIDIR CON MAPA DE INFLUENCIA-----------------------------!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
-                spawn_tile = t;
+            int r = UnityEngine.Random.Range(0, 3);
+            switch (r)
+            {
+                case 0:
+                    _ch_Craeation.BuyUnit(_blue_knight);
+                    break;
+                case 1:
+                    _ch_Craeation.BuyUnit(_blue_archer);
+                    break;
+                case 2:
+                    _ch_Craeation.BuyUnit(_blue_bat);
+                    break;
+                default:
+                    break;
+            }
         }
-        spawn_tile.f_Buy_Move();
+        else
+        {
+            if (player2Gold < 100)
+            {
+                if (player2Gold >= 80) _ch_Craeation.BuyUnit(_blue_bat);
+                else if (player2Gold >= 70) _ch_Craeation.BuyUnit(_blue_archer);
+                else _ch_Craeation.BuyUnit(_blue_knight);
+            }
+            else
+            {
+                if (player2Gold >= 400) _ch_Craeation.BuyUnit(_blue_bat);
+                else if (player2Gold >= 300) _ch_Craeation.BuyUnit(_blue_archer);
+                else if (player2Gold >= 200) _ch_Craeation.BuyUnit(_blue_knight);
+            }
+        }
+       
+        Tile spawn_tile = null;
+        if (_state.Equals("Normal")) //Spawn unit in a random tile
+        {
+            Tile[] tiles = _ch_Craeation._tiles_to_place_things.ToArray();
+            spawn_tile = tiles[UnityEngine.Random.Range(0, tiles.Length)];
+        }
+        else
+        {
+            foreach (Tile t in _ch_Craeation._tiles_to_place_things)
+            {
+                if (_state.Equals("Attack")) //Spawn units near the enemy base
+                {
+                    if (spawn_tile == null || Vector2.Distance(_player_house.transform.position, t.transform.position) < Vector2.Distance(_player_house.transform.position, spawn_tile.transform.position)) //DECIDIR CON MAPA DE INFLUENCIA-----------------------------!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
+                        spawn_tile = t;
+                }
+                else if (_state.Equals("Defend")) //Spawn units near your base
+                {
+                    if (spawn_tile == null || Vector2.Distance(_player_house.transform.position, t.transform.position) > Vector2.Distance(_player_house.transform.position, spawn_tile.transform.position)) //DECIDIR CON MAPA DE INFLUENCIA-----------------------------!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!
+                        spawn_tile = t;
+                }
+            }
+        }
+        if (spawn_tile != null) spawn_tile.f_Buy_Move();
+    }
+
+    private void f_ia_Attack(Unit iaUnit)
+    {
+        if (iaUnit.hasAttacked) return;
+        if (!iaUnit.isSelected) iaUnit.f_Select_Unit_attack();
+        if (iaUnit.m_enemyBaseInRange)
+        {
+            iaUnit.AttackBase(_player_house);
+            return;
+        }
+        if (iaUnit.enemiesInRange.Count <= 0) return;
+        Unit _unit_aux = null;
+        foreach(Unit player_unit in iaUnit.enemiesInRange)
+        {
+            if (_unit_aux is null || player_unit.health < _unit_aux.health) _unit_aux = player_unit; //focus al que menos vida tenga
+        }
+        if(_unit_aux != null) iaUnit.Attack(_unit_aux);
+    }
+
+    private void f_ia_Move(Unit iaUnit)
+    {
+        if (iaUnit.hasMoved) return;
+        if (!iaUnit.isSelected) iaUnit.f_Select_Unit_attack();
+        //List<Tile> aux_Destinies = new List<Tile>(); //prueba borrable
+        Tile t_destiny = null;
+        Tile aux_base = null;
+        bool near_Influence = false;
+        foreach (Tile t in iaUnit._tilesReacheable) //Elijo hacia que unidad me muevo
+        {
+            if (aux_base is null || aux_base.m_EnemyNode.BaseValue < t.m_EnemyNode.BaseValue) aux_base = t;
+            if (t_destiny is null) t_destiny = t;
+            else //influencia de enemigo mas alta
+            {
+                bool enemyInMyBack = false;
+                float aux_t = 0;
+                float aux_td = 0;
+                foreach (float iAux_value in t.m_EnemyNode.Influence) if (aux_t < iAux_value) aux_t = iAux_value;
+                foreach (float iAux_value in t_destiny.m_EnemyNode.Influence) if (aux_td < iAux_value) aux_td = iAux_value;
+                foreach (Unit enemy in FindObjectsOfType<Unit>())
+                {
+                    if (enemy.playerNumber != playerTurn && Vector2.Distance(_ia_house.transform.position, enemy.transform.position) < Vector2.Distance(_ia_house.transform.position, iaUnit.transform.position))
+                        enemyInMyBack = true;
+                }
+                if (_state.Equals("Defend") && enemyInMyBack) //me muevo hacia la unidad con mas influencia y cercana a mi base
+                {
+                    if (aux_td < aux_t && 
+                        Vector2.Distance(_ia_house.transform.position, t.transform.position) < Vector2.Distance(_ia_house.transform.position, t_destiny.transform.position))
+                    {
+                        t_destiny = t;
+                        //aux_Destinies.Add(t_destiny); //prueba borrable
+                    }
+                }
+                else //Me muevo hacia la unidad con mas influencia
+                {
+                    if (aux_td < aux_t) 
+                        t_destiny = t;
+                }
+            }
+        }
+        /*if (_state.Equals("Defend")) //prueba borrable
+            foreach (Tile t_aux in aux_Destinies)
+                if (Vector2.Distance(_player_house.transform.position, t_aux.transform.position) > Vector2.Distance(_player_house.transform.position, t_destiny.transform.position))
+                    t_destiny = t_aux;*/
+
+        //Compruebo si ha podido encontrar un destino mediante los mapas de influencia
+        if (aux_base != null && (aux_base.m_EnemyNode.BaseValue > 0.4 || (aux_base.m_EnemyNode.BaseValue > 0 && Vector2.Distance(_player_house.transform.position, iaUnit.transform.position) <= iaUnit.tileSpeed + iaUnit.attackRadius)))
+            t_destiny = aux_base;
+        else if (t_destiny != null)
+            foreach (float iAux_value in t_destiny.m_EnemyNode.Influence)
+            {
+                if (iAux_value > 0)
+                    near_Influence = true;
+                else
+                    near_Influence = false;
+            }
+        if (!near_Influence) //Si no llega el mapa de influencia me muevo hacia la base enemiga, si estoy defendiendo, hacia la mia
+        {
+            foreach (Tile t in iaUnit._tilesReacheable)
+            {
+                if (_state.Equals("Defend"))
+                {
+                    if (t_destiny is null || Vector2.Distance(_player_house.transform.position, t.transform.position) > Vector2.Distance(_player_house.transform.position, t_destiny.transform.position)) 
+                        t_destiny = t;
+                }
+                else
+                {
+                    if (t_destiny is null || Vector2.Distance(_player_house.transform.position, t.transform.position) < Vector2.Distance(_player_house.transform.position, t_destiny.transform.position)) 
+                        t_destiny = t;
+                }
+            }
+        }
+        if (t_destiny is null || Vector2.Distance(t_destiny.transform.position, iaUnit.transform.position) < 0.8) //Quiero evitar que se mueva a la casilla sobre la que ya esta pero en principio esa ni esta en la lista
+            iaUnit.hasMoved = true;
+        else
+            t_destiny.f_Buy_Move(); //Creo que a veces nunca se mueve, pero llama a moverse y como no completa el movimiento no pone a true iaUnit.hasmoved, Casi 100% seguro que entra aqui en una especie de bucle infinito
+        timer = true;
+        StartCoroutine(WaitForMoveToEnd(iaUnit));
+    }
+    IEnumerator WaitForMoveToEnd(Unit iaUnit)
+    {
+        yield return new WaitUntil(() => iaUnit.hasMoved || timeToPassToNextUnit > 5f); //iaUnit.tileSpeed/iaUnit.moveSpeed + 0.2f
+        yield return new WaitForSeconds(0.5f);
+        iaUnit.hasMoved = true; //para segurarse
+        GridGenerator.instance.f_GenerateSelfInfluenceMap();
+        f_ia_Attack(iaUnit);
+        timer = false;
+    }
+
+    private void Wait(float time, Unit iaUnit)
+    {
+        timer = true;
     }
 
     /// <summary>
@@ -303,6 +552,4 @@ public class GM : MonoBehaviour
     public void RestartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
-
 }

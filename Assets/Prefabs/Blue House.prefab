@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponIcon: {fileID: 5915751927062769589}
   playerNumber: 2
-  health: 1
+  health: 30
   armor: 0
   defenseDamage: 0
   displayedText: {fileID: 0}

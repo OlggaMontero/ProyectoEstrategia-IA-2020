@@ -12,7 +12,7 @@ public class HoverEffect : MonoBehaviour
     }
 
     private void OnMouseExit()
-    {
+    {        
         transform.localScale -= new Vector3(amount, amount, amount);
     }
 }
