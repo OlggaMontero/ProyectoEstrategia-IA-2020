@@ -159,20 +159,8 @@ public class Unit : MonoBehaviour
                 if (tile.isClear() == true)
                 { // is the tile clear from any obstacles
                     tile.Highlight();
-                    //_tilesReacheable.Add(tile);
                 }
             }          
-        }
-        foreach (Tile tile in tiles)
-        {
-            if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= tileSpeed)
-            { // how far he can move
-                if (tile.isClear() == true)
-                { // is the tile clear from any 
-                    _tilesReacheable.Add(tile);
-                }
-
-            }
         }
     }
 
@@ -500,11 +488,57 @@ public class Unit : MonoBehaviour
         gm.MoveInfoPanel(this);
     }
 
-    public void FinishgMovement()
+    public void VistoPorEnemigo()
     {
-        ResetWeaponIcons();
-        GetEnemies();
-        gm.MoveInfoPanel(this);
-        hasMoved = true;
+        enemigosQueMeVen += 1;
+        if (enemigosQueMeVen >= 1)
+        {
+            Mostrar();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
     }
+
+    public void DesvistoPorEnemigo()
+    {
+        enemigosQueMeVen -= 1;
+        if (enemigosQueMeVen == 0)
+        {
+            Esconder();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void Mostrar()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1.0f);
+        }
+    }
+
+    public void Esconder()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.0f);
+        }
+    }
+
+    public void ResetVision()
+    {
+        enemigosQueMeVen = 0;
+        objetosVistos.Clear();
+        tilesVistos.Clear();
+    }
+
+
+
 }
