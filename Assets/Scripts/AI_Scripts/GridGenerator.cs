@@ -71,7 +71,6 @@ public class GridGenerator : MonoBehaviour
             for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
             {
                 f_ClearEnemyNodes(i, j);
-                print("a");
             }
         }
 
