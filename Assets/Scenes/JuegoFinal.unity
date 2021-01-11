@@ -3092,6 +3092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Knight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4446637798450979530, guid: f39be49cad0c02340820d187847171e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4446637798450979531, guid: f39be49cad0c02340820d187847171e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7637,6 +7642,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 4446637798450979530, guid: f39be49cad0c02340820d187847171e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4446637798450979531, guid: f39be49cad0c02340820d187847171e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11323,12 +11333,12 @@ PrefabInstance:
     - target: {fileID: 484875169853229662, guid: f054a74375d258145b59bb210d52b539,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 484875169853229662, guid: f054a74375d258145b59bb210d52b539,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 484875169853229662, guid: f054a74375d258145b59bb210d52b539,
         type: 3}
@@ -20468,6 +20478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Knight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4446637798450979530, guid: f39be49cad0c02340820d187847171e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4446637798450979531, guid: f39be49cad0c02340820d187847171e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23848,12 +23863,12 @@ PrefabInstance:
     - target: {fileID: 179943397156523661, guid: 0fb875a05caa9ef42bc5ab8ca814b69d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 179943397156523661, guid: 0fb875a05caa9ef42bc5ab8ca814b69d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 179943397156523661, guid: 0fb875a05caa9ef42bc5ab8ca814b69d,
         type: 3}
@@ -24107,6 +24122,8 @@ MonoBehaviour:
   createdVillage: {fileID: 0}
   blueVictory: {fileID: 1028135207}
   darkVictory: {fileID: 1938353760}
+  minimumDistanceOfEnemiesToBase: 5
+  numberOfEnemiesNearToBase: 1
   _blue_archer: {fileID: 626269173632994736, guid: dfd3953b532394b459bb5b605feb9936,
     type: 3}
   _blue_bat: {fileID: 3831706681586816701, guid: 0f0a2447a78d86143a35917ac0efe6e7,

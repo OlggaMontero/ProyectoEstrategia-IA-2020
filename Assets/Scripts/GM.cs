@@ -225,7 +225,7 @@ public class GM : MonoBehaviour
             if (enemy.playerNumber != playerTurn && Vector2.Distance(_ia_house.transform.position, enemy.transform.position) < minimumDistanceOfEnemiesToBase) // check is the enemy is near enough to base
                 enemiesNearBase++;
 
-        if (enemiesNearBase > numberOfEnemiesNearToBase)
+        if (enemiesNearBase >= numberOfEnemiesNearToBase)
             _state = "Defend";
         else
             _state = "Attack";
@@ -451,8 +451,6 @@ public class GM : MonoBehaviour
             {
                 if (iAux_value > 0)
                     near_Influence = true;
-                else
-                    near_Influence = false;
             }
         if (!near_Influence) //Si no llega el mapa de influencia me muevo hacia la base enemiga, si estoy defendiendo, hacia la mia
         {
@@ -482,7 +480,7 @@ public class GM : MonoBehaviour
         yield return new WaitUntil(() => iaUnit.hasMoved || timeToPassToNextUnit > 5f); //iaUnit.tileSpeed/iaUnit.moveSpeed + 0.2f
         yield return new WaitForSeconds(0.5f);
         iaUnit.hasMoved = true; //para segurarse
-        GridGenerator.instance.f_GenerateSelfInfluenceMap();
+        //GridGenerator.instance.f_GenerateSelfInfluenceMap();
         f_ia_Attack(iaUnit);
         timer = false;
     }
