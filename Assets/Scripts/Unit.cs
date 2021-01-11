@@ -304,6 +304,7 @@ public class Unit : MonoBehaviour
             gm.ResetTiles(); // reset tiles when we die
             gm.RemoveInfoPanel(this);
             Destroy(gameObject);
+            GridGenerator.instance.f_GenerateEnemyInfluenceMap();
         }
 
         gm.UpdateInfoStats();
