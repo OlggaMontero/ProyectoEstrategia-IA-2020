@@ -18,8 +18,6 @@ public class House : MonoBehaviour
 
     public Text displayedText;
 
-
-
     private void Start()
     {
         gm = FindObjectOfType<GM>();
@@ -28,23 +26,20 @@ public class House : MonoBehaviour
   
     private void OnMouseDown() // attack
     {
-        if(gm.playerTurn == 1)
-        {
-            if (gm.selectedUnit == null) return;
+        if (gm.selectedUnit == null) return;
 
-            if (playerNumber == gm.playerTurn)
+        if (playerNumber == gm.playerTurn)
+        {
+            //nada de momento?
+        }
+        else
+        {
+            gm.selectedUnit.ResetWeaponIcons();
+            if (gm.selectedUnit.m_enemyBaseInRange && !gm.selectedUnit.hasAttacked && gm.selectedUnit.enemyBase == this.gameObject)
             {
-                //nada de momento?
+                gm.selectedUnit.AttackBase(this);
             }
-            else
-            {
-                gm.selectedUnit.ResetWeaponIcons();
-                if (gm.selectedUnit.m_enemyBaseInRange && !gm.selectedUnit.hasAttacked && gm.selectedUnit.enemyBase == this.gameObject)
-                {
-                    gm.selectedUnit.AttackBase(this);
-                }
-            }
-        } 
+        }
     }
 
     public void UpdateHealthDisplay()
