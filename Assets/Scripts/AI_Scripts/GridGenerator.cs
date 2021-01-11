@@ -70,27 +70,26 @@ public class GridGenerator : MonoBehaviour
         {
             for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
             {
-                f_ClearEnemyNodes(i, j);
-            }
-        }
-
-        for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
-        {
-            for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
-            {
                 f_CheckWhatIsInTheEnemyTile(i, j);
             }
         }
     }
 
-    private void f_ClearEnemyNodes(int i, int j)
+    public void f_ClearEnemyNodes()
     {
-        m_EnemyGrid[i, j].m_EnemyNode.ArcherValue = 0;
-        m_EnemyGrid[i, j].m_EnemyNode.BaseValue = 0;
-        m_EnemyGrid[i, j].m_EnemyNode.KingValue = 0;
-        m_EnemyGrid[i, j].m_EnemyNode.KnightValue = 0;
-        m_EnemyGrid[i, j].m_EnemyNode.VillageValue = 0;
-        m_EnemyGrid[i, j].m_EnemyNode.BatValue = 0;
+        for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
+        {
+            for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
+            {
+                m_EnemyGrid[i, j].m_EnemyNode.ArcherValue = 0;
+                m_EnemyGrid[i, j].m_EnemyNode.BaseValue = 0;
+                m_EnemyGrid[i, j].m_EnemyNode.KingValue = 0;
+                m_EnemyGrid[i, j].m_EnemyNode.KnightValue = 0;
+                m_EnemyGrid[i, j].m_EnemyNode.VillageValue = 0;
+                m_EnemyGrid[i, j].m_EnemyNode.BatValue = 0;
+            }
+        }
+
     }
 
     private void f_CheckWhatIsInTheEnemyTile(int x, int y)
