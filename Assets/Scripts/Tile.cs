@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    private SpriteRenderer rend;
+    public SpriteRenderer rend;
     public Color highlightedColor;
     public Color creatableColor;
     public Color fogColor;
@@ -56,6 +56,12 @@ public class Tile : MonoBehaviour
             }
         }
         
+    }
+
+    private void f_InitializeNode()
+    {
+        m_EnemyNode = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
+        m_SelfNode = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
     }
 
     public void checkTilesNearVillages()
