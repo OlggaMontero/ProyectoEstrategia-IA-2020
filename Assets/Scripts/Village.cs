@@ -100,6 +100,11 @@ public class Village : MonoBehaviour
         {
             sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1.0f);
         }
+        ParticleSystem[] particles = GetComponentsInChildren<ParticleSystem>();
+        foreach (ParticleSystem particle in particles)
+        {
+            particle.Play();
+        }
     }
 
     public void Esconder()
@@ -108,6 +113,11 @@ public class Village : MonoBehaviour
         foreach (SpriteRenderer sprite in sprites)
         {
             sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.0f);
+        }
+        ParticleSystem[] particles = GetComponentsInChildren<ParticleSystem>();
+        foreach (ParticleSystem particle in particles)
+        {
+            particle.Stop();
         }
     }
 
