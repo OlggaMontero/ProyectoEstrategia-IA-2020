@@ -17,11 +17,13 @@ public class CharacterCreation : MonoBehaviour
     public float m_distanceToAllowSpawn = 1.9f;
     public float m_distanceToAllowSpawnForVillage = 4.9f;
     House[] bases;
+    public List<Tile> _tiles_to_place_things;
     GameObject currentTurnHouse;
 
     private void Start()
     {
         gm = FindObjectOfType<GM>();
+        _tiles_to_place_things = new List<Tile>();
 
         bases = FindObjectsOfType<House>();        
     }
@@ -31,11 +33,11 @@ public class CharacterCreation : MonoBehaviour
         if (gm.playerTurn == 1)
         {
             player1openButton.interactable = true;
-            player2openButton.interactable = false;
+            //player2openButton.interactable = false;
         }
         else
         {
-            player2openButton.interactable = true;
+            //player2openButton.interactable = true;
             player1openButton.interactable = false;
         }
     }
@@ -48,6 +50,7 @@ public class CharacterCreation : MonoBehaviour
         player1Menu.SetActive(false);
         player2Menu.SetActive(false);
     }
+
 
     public void BuyUnit (Unit unit) {
 
@@ -68,8 +71,15 @@ public class CharacterCreation : MonoBehaviour
         gm.createdUnit = unit;
 
         DeselectUnit();
+
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile t in tiles)
+        {
+            t.checkTilesNearVillages();
+        }
         SetCreatableTiles(false);
     }
+
 
     public void BuyVillage(Village village) {
         if (village.playerNumber == 1 && village.cost <= gm.player1Gold)
@@ -103,20 +113,22 @@ public class CharacterCreation : MonoBehaviour
     }
 
     void SetCreatableTiles(bool village) {
-        gm.ResetTiles();        
+        gm.ResetTiles();
+        _tiles_to_place_things.Clear();
 
         Tile[] tiles = FindObjectsOfType<Tile>();
         foreach (Tile tile in tiles)
         {
             if (village)
             {
-                foreach (House h in bases)
+                foreach (House h in bases) //para evitar spawnear villagesd al lado de las bases
                 {
                     if (h.playerNumber == gm.playerTurn) currentTurnHouse = h.gameObject;                     
                 }
                 if (tile.isPreparedForSpawn(true) && tile.m_nearToBaseIndex == gm.playerTurn && (Vector2.Distance(tile.transform.position, currentTurnHouse.transform.position) > 1.1f))
                 {
                     tile.SetCreatable();
+                    _tiles_to_place_things.Add(tile);
                 }
             }
             else
@@ -124,6 +136,7 @@ public class CharacterCreation : MonoBehaviour
                 if (tile.isPreparedForSpawn(false) && tile.m_nearToBaseIndex == gm.playerTurn)
                 {
                     tile.SetCreatable();
+                    _tiles_to_place_things.Add(tile);
                 }
             }
         }
