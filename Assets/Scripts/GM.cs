@@ -65,6 +65,8 @@ public class GM : MonoBehaviour
     private Unit[] _ia_units_array;
     public List<Village> _ia_villages;
 
+
+
     private void Start()
     {
         _state = "Normal";
@@ -83,7 +85,7 @@ public class GM : MonoBehaviour
 
     private void Update()
     {
-        if (/*playerTurn == 1 && */(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b"))) {
+        if (playerTurn == 1 && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b"))) {
             EndTurn();
         }
 
@@ -408,8 +410,10 @@ public class GM : MonoBehaviour
         bool near_Influence = false;
         foreach (Tile t in iaUnit._tilesReacheable) //Elijo hacia que unidad me muevo
         {
-            if (aux_base is null || aux_base.m_EnemyNode.BaseValue < t.m_EnemyNode.BaseValue) aux_base = t;
-            if (t_destiny is null) t_destiny = t;
+            if (aux_base is null || aux_base.m_EnemyNode.BaseValue < t.m_EnemyNode.BaseValue) 
+                aux_base = t;
+            if (t_destiny is null) 
+                t_destiny = t;
             else //influencia de enemigo mas alta
             {
                 bool enemyInMyBack = false;
@@ -468,7 +472,7 @@ public class GM : MonoBehaviour
                 }
             }
         }
-        if (t_destiny is null || Vector2.Distance(t_destiny.transform.position, iaUnit.transform.position) < 0.8) //Quiero evitar que se mueva a la casilla sobre la que ya esta pero en principio esa ni esta en la lista
+        if (t_destiny is null /*|| Vector2.Distance(t_destiny.transform.position, iaUnit.transform.position) < 0.8*/) //Quiero evitar que se mueva a la casilla sobre la que ya esta pero en principio esa ni esta en la lista
             iaUnit.hasMoved = true;
         else
             t_destiny.f_Buy_Move(); //Creo que a veces nunca se mueve, pero llama a moverse y como no completa el movimiento no pone a true iaUnit.hasmoved, Casi 100% seguro que entra aqui en una especie de bucle infinito
@@ -485,10 +489,6 @@ public class GM : MonoBehaviour
         timer = false;
     }
 
-    private void Wait(float time, Unit iaUnit)
-    {
-        timer = true;
-    }
 
     /// <summary>
     /// Añade 1 de oro al jugador en turno por cada pueblo en el tablero
