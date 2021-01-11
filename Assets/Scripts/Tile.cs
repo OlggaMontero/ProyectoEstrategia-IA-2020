@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    private SpriteRenderer rend;
+    public SpriteRenderer rend;
     public Color highlightedColor;
     public Color creatableColor;
 
@@ -25,7 +25,13 @@ public class Tile : MonoBehaviour
 
 	private AudioSource source;
 
-    public BoxNode node;
+    public BoxNode m_SelfNode;
+    public BoxNode m_EnemyNode;
+
+
+    public Color fogColor;
+
+    private int unidadesViendome;
 
     private void Start()
     {
@@ -57,7 +63,8 @@ public class Tile : MonoBehaviour
 
     private void f_InitializeNode()
     {
-        node = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
+        m_EnemyNode = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
+        m_SelfNode = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
     }
 
     public void checkTilesNearVillages()
@@ -65,7 +72,7 @@ public class Tile : MonoBehaviour
         Village[] villages = FindObjectsOfType<Village>();
         foreach (Village v in villages)
         {            
-            if (Vector2.Distance(transform.position, v.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawn)
+            if (Vector2.Distance(transform.position, v.transform.position) < FindObjectOfType<CharacterCreation>().m_distanceToAllowSpawnForVillage/2)
             {
                 isNearToVillage = true;
                 m_nearToBaseIndex = v.playerNumber;
@@ -102,7 +109,10 @@ public class Tile : MonoBehaviour
 
     public void Reset()
     {
-        rend.color = Color.white;
+        if (unidadesViendome >= 1)
+        {
+            rend.color = Color.white;
+        }
         isWalkable = false;
         isCreatable = false;
     }
@@ -115,21 +125,30 @@ public class Tile : MonoBehaviour
     
     private void OnMouseDown()
     {
-        if (isWalkable == true) {
+        if (gm.playerTurn == 1) f_Buy_Move();
+    }
+
+    public void f_Buy_Move() {
+        if (isWalkable == true)
+        {
             gm.selectedUnit.Move(this.transform);
-        } else if (isCreatable == true && gm.createdUnit != null) {
+        }
+        else if (isCreatable == true && gm.createdUnit != null)
+        {
             Unit unit = Instantiate(gm.createdUnit, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             unit.hasMoved = true;
             unit.hasAttacked = true;
             gm.ResetTiles();
             gm.createdUnit = null;
-        } else if (isCreatable == true && gm.createdVillage != null) {
-            Instantiate(gm.createdVillage, new Vector3(transform.position.x, transform.position.y, 0) , Quaternion.identity);
+        }
+        else if (isCreatable == true && gm.createdVillage != null)
+        {
+            Village v = Instantiate(gm.createdVillage, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            gm._ia_villages.Add(v);
             gm.ResetTiles();
             gm.createdVillage = null;
         }
     }
-
 
     private void OnMouseEnter()
     {
@@ -153,5 +172,54 @@ public class Tile : MonoBehaviour
             sizeIncrease = false;
             transform.localScale -= new Vector3(amount, amount, amount);
         }
+    }
+
+    public void VistoPorUnidad()
+    {
+        unidadesViendome += 1;
+        if (unidadesViendome >= 1)
+        {
+            Mostrar();
+        }
+        if (unidadesViendome < 0)
+        {
+            Debug.Log("bug -> tile.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void DesvistoPorUnidad()
+    {
+        unidadesViendome -= 1;
+        if (unidadesViendome == 0)
+        {
+            Esconder();
+        }
+        if (unidadesViendome < 0)
+        {
+            Debug.Log("bug -> tile.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void Mostrar()
+    {
+        if (rend == null)
+        {
+            rend = GetComponent<SpriteRenderer>();
+        }
+        rend.color = Color.white;
+    }
+
+    public void Esconder()
+    {
+        if (rend == null)
+        {
+            rend = GetComponent<SpriteRenderer>();
+        }
+        rend.color = fogColor;
+    }
+
+    public void ResetVision()
+    {
+        unidadesViendome = 0;
     }
 }

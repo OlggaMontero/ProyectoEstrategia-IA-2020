@@ -44,11 +44,23 @@ public class Unit : MonoBehaviour
 
 	private AudioSource source;
 
-    public Text displayedText; 
+    //public Text displayedText;
+
+    //IA Variables
+    public List<Tile> _tilesReacheable;
+
+    public int viewRadius;
+
+    private int enemigosQueMeVen = 0;
+
+    private HashSet<GameObject> objetosVistos = new HashSet<GameObject>();
+    private HashSet<GameObject> tilesVistos = new HashSet<GameObject>();
 
     private void Start()
     {
-		source = GetComponent<AudioSource>();
+        _tilesReacheable = new List<Tile>();
+
+        source = GetComponent<AudioSource>();
 		camAnim = Camera.main.GetComponent<Animator>();
         gm = FindObjectOfType<GM>();
         UpdateHealthDisplay();
@@ -56,20 +68,21 @@ public class Unit : MonoBehaviour
         //enemy base
         if (playerNumber == 1)
         {
-            enemyBase = GameObject.Find("Blue House");
+            enemyBase = GameObject.Find("Blue Base");
         }
         else
         {
-            enemyBase = GameObject.Find("Dark House");
+            enemyBase = GameObject.Find("Dark Base");
         }
     }
 
     private void UpdateHealthDisplay ()
     {
-        if (isKing)
+        /*if (isKing)
         {
             displayedText.text = health.ToString();
-        }
+        }*/
+        return;
     }
 
     #region Mouse control
@@ -77,19 +90,25 @@ public class Unit : MonoBehaviour
     
     private void OnMouseDown() // select character or deselect if already selected
     {
-        
+        if(gm.playerTurn == 1) f_Select_Unit_attack();
+    }
+
+    public void f_Select_Unit_attack() {
+
         ResetWeaponIcons();
 
         if (isSelected == true)
         {
-            
+
             isSelected = false;
             gm.selectedUnit = null;
             gm.ResetTiles();
 
         }
-        else { //select character
-            if (playerNumber == gm.playerTurn) { // select unit only if it's his turn
+        else
+        { //select character
+            if (playerNumber == gm.playerTurn)
+            { // select unit only if it's his turn
                 if (gm.selectedUnit != null)
                 { // deselect the unit that is currently selected, so there's only one isSelected unit at a time
                     gm.selectedUnit.isSelected = false;
@@ -99,21 +118,20 @@ public class Unit : MonoBehaviour
                 gm.selectedUnit = this;
 
                 isSelected = true;
-				if(source != null){
-					source.Play();
-				}
-				
+                if (source != null)
+                {
+                    source.Play();
+                }
+
                 GetWalkableTiles();
-                GetEnemies();                
+                GetEnemies();
             }
 
         }
 
-
-
         Collider2D col = Physics2D.OverlapCircle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 0.15f);
         if (col != null)
-        {            
+        {
             Unit unit = col.GetComponent<Unit>(); // double check that what we clicked on is a unit
             if (unit != null && gm.selectedUnit != null)
             {
@@ -141,7 +159,7 @@ public class Unit : MonoBehaviour
         if (hasMoved == true) {
             return;
         }
-
+        _tilesReacheable.Clear();
         Tile[] tiles = FindObjectsOfType<Tile>();
         foreach (Tile tile in tiles) {
             if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= tileSpeed)
@@ -149,9 +167,21 @@ public class Unit : MonoBehaviour
                 if (tile.isClear() == true)
                 { // is the tile clear from any obstacles
                     tile.Highlight();
+                    //_tilesReacheable.Add(tile);
                 }
 
             }          
+        }
+        foreach (Tile tile in tiles)
+        {
+            if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= tileSpeed)
+            { // how far he can move
+                if (tile.isClear() == true)
+                { // is the tile clear from any 
+                    _tilesReacheable.Add(tile);
+                }
+
+            }
         }
     }
 
@@ -201,16 +231,7 @@ public class Unit : MonoBehaviour
         hasAttacked = true;
 
         int enemyDamage = attackDamage;// - enemyBase.armor;
-        //int unitDamage = enemyBase.defenseDamage - armor;
 
-        /*if (unitDamage >= 1)
-        {
-            health -= unitDamage;
-            UpdateHealthDisplay();
-            DamageIcon d = Instantiate(damageIcon, transform.position, Quaternion.identity);
-            d.Setup(unitDamage);
-        }
-        */
         if (enemyDamage >= 1)
         {
             enemyBase.health -= enemyDamage;
@@ -228,29 +249,9 @@ public class Unit : MonoBehaviour
             DamageIcon d = Instantiate(damageIcon, enemyBase.transform.position, Quaternion.identity);
             d.Setup(enemyDamage);
         }
-
-
-        /*if (health <= 0)
-        {
-
-            if (deathEffect != null)
-            {
-                Instantiate(deathEffect, enemyBase.transform.position, Quaternion.identity);
-                camAnim.SetTrigger("shake");
-            }
-
-            if (isKing)
-            {
-                gm.ShowVictoryPanel(playerNumber);
-            }
-
-            gm.ResetTiles(); // reset tiles when we die
-            gm.RemoveInfoPanel(this);
-            Destroy(gameObject);
-        }*/
     }
 
-    void Attack(Unit enemy) {
+    public void Attack(Unit enemy) {
         hasAttacked = true;
 
         int enemyDamege = attackDamage - enemy.armor;
@@ -294,10 +295,10 @@ public class Unit : MonoBehaviour
 				camAnim.SetTrigger("shake");
 			}
 
-            if (enemy.isKing)
+            /*if (enemy.isKing)
             {
                 gm.ShowVictoryPanel(enemy.playerNumber);
-            }
+            }*/
 
             GetWalkableTiles(); // check for new walkable tiles (if enemy has died we can now walk on his tile)
             gm.RemoveInfoPanel(enemy);
@@ -313,14 +314,15 @@ public class Unit : MonoBehaviour
 				camAnim.SetTrigger("shake");
 			}
 
-			if (isKing)
+			/*if (isKing)
             {
                 gm.ShowVictoryPanel(playerNumber);
-            }
+            }*/
 
             gm.ResetTiles(); // reset tiles when we die
             gm.RemoveInfoPanel(this);
             Destroy(gameObject);
+            GridGenerator.instance.f_GenerateEnemyInfluenceMap();
         }
 
         gm.UpdateInfoStats();
@@ -349,21 +351,193 @@ public class Unit : MonoBehaviour
 
         while (transform.position.x != movePos.position.x) { // first aligns him with the new tile's x pos
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(movePos.position.x, transform.position.y), moveSpeed * Time.deltaTime);
+            GetVisibleEnemies();
+            VisibleTiles();
             yield return null;
         }
         while (transform.position.y != movePos.position.y) // then y
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, movePos.position.y), moveSpeed * Time.deltaTime);
+            GetVisibleEnemies();
+            VisibleTiles();
             yield return null;
         }
 
-        hasMoved = true;
         ResetWeaponIcons();
         GetEnemies();
         gm.MoveInfoPanel(this);
+        hasMoved = true;
+    }
+
+    public void FinishgMovement()
+    {
+        ResetWeaponIcons();
+        GetEnemies();
+        gm.MoveInfoPanel(this);
+        hasMoved = true;
+    }
+
+    public void VisibleTiles()
+    {
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile tile in tiles)
+        {
+            if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= viewRadius)
+            {
+                if (!tilesVistos.Contains(tile.gameObject))
+                {
+                    tile.VistoPorUnidad();
+                    tilesVistos.Add(tile.gameObject);
+                }
+            }
+            else
+            {
+                if (tilesVistos.Contains(tile.gameObject))
+                {
+                    tile.DesvistoPorUnidad();
+                    tilesVistos.Remove(tile.gameObject);
+                }
+            }
+        }
     }
 
 
+    public void GetVisibleEnemies()
+    {
+        enemiesInRange.Clear();
 
+        Unit[] enemies = FindObjectsOfType<Unit>();
+        foreach (Unit enemy in enemies)
+        {
+            if (enemy.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - enemy.transform.position.x) + Mathf.Abs(transform.position.y - enemy.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(enemy.gameObject))
+                    {
+                        enemy.VistoPorEnemigo();
+                        objetosVistos.Add(enemy.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(enemy.gameObject))
+                    {
+                        enemy.DesvistoPorEnemigo();
+                        objetosVistos.Remove(enemy.gameObject);
+                    }
+                }
 
+            }
+        }
+        VisibleStructures();
+    }
+
+    public void VisibleStructures()
+    {
+        Village[] villages = FindObjectsOfType<Village>();
+        foreach (Village village in villages)
+        {
+            if (village.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - village.transform.position.x) + Mathf.Abs(transform.position.y - village.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(village.gameObject))
+                    {
+                        village.VistoPorEnemigo();
+                        objetosVistos.Add(village.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(village.gameObject))
+                    {
+                        village.DesvistoPorEnemigo();
+                        objetosVistos.Remove(village.gameObject);
+                    }
+                }
+
+            }
+        }
+
+        House[] houses = FindObjectsOfType<House>();
+        foreach (House house in houses)
+        {
+            if (house.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - house.transform.position.x) + Mathf.Abs(transform.position.y - house.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(house.gameObject))
+                    {
+                        house.VistoPorEnemigo();
+                        objetosVistos.Add(house.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(house.gameObject))
+                    {
+                        house.DesvistoPorEnemigo();
+                        objetosVistos.Remove(house.gameObject);
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    public void VistoPorEnemigo()
+    {
+        enemigosQueMeVen += 1;
+        if (enemigosQueMeVen >= 1)
+        {
+            Mostrar();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void DesvistoPorEnemigo()
+    {
+        enemigosQueMeVen -= 1;
+        if (enemigosQueMeVen == 0)
+        {
+            Esconder();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void Mostrar()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            if (sprite.sprite.name == "lights_1")
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, .3f);
+            else
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1.0f);
+        }
+    }
+
+    public void Esconder()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.0f);
+        }
+    }
+
+    public void ResetVision()
+    {
+        enemigosQueMeVen = 0;
+        objetosVistos.Clear();
+        tilesVistos.Clear();
+    }
 }

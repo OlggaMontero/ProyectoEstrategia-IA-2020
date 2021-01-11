@@ -8,6 +8,7 @@ public class BoxNode
     public float VillageValue;
     public float KnightValue;
     public float BaseValue;
+    public float[] Influence;
 
     public Vector2 position;
     public Vector2Int MatrixPosition;
@@ -21,7 +22,17 @@ public class BoxNode
         KnightValue = knightValue;
         BaseValue = baseValue;
 
+        Influence = new float[4];
+
         MatrixPosition = matrixPosition;
         this.position = position;
+    }
+
+    public void PopulateArray()
+    {
+        Influence[0] = ArcherValue;
+        Influence[1] = BatValue;
+        Influence[2] = KingValue;
+        Influence[3] = KnightValue;
     }
 }
