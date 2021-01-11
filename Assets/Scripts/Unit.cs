@@ -51,7 +51,7 @@ public class Unit : MonoBehaviour
 
     private int enemigosQueMeVen = 0;
 
-    private HashSet<GameObject> enemigosVistos = new HashSet<GameObject>();
+    private HashSet<GameObject> objetosVistos = new HashSet<GameObject>();
     private HashSet<GameObject> tilesVistos = new HashSet<GameObject>();
 
 
@@ -225,25 +225,80 @@ public class Unit : MonoBehaviour
             {
                 if (Mathf.Abs(transform.position.x - enemy.transform.position.x) + Mathf.Abs(transform.position.y - enemy.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
                 {
-                    if (!enemigosVistos.Contains(enemy.gameObject))
+                    if (!objetosVistos.Contains(enemy.gameObject))
                     {
                         enemy.VistoPorEnemigo();
-                        enemigosVistos.Add(enemy.gameObject);
+                        objetosVistos.Add(enemy.gameObject);
                     }
                 }
                 else
                 {
-                    if (enemigosVistos.Contains(enemy.gameObject))
+                    if (objetosVistos.Contains(enemy.gameObject))
                     {
                         enemy.DesvistoPorEnemigo();
-                        enemigosVistos.Remove(enemy.gameObject);
+                        objetosVistos.Remove(enemy.gameObject);
                     }
                 }
             
             }
         }
+        VisibleStructures();
+    }
+
+    public void VisibleStructures()
+    {
+        Village[] villages = FindObjectsOfType<Village>();
+        foreach (Village village in villages)
+        {
+            if (village.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - village.transform.position.x) + Mathf.Abs(transform.position.y - village.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(village.gameObject))
+                    {
+                        village.VistoPorEnemigo();
+                        objetosVistos.Add(village.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(village.gameObject))
+                    {
+                        village.DesvistoPorEnemigo();
+                        objetosVistos.Remove(village.gameObject);
+                    }
+                }
+
+            }
+        }
+
+        House[] houses = FindObjectsOfType<House>();
+        foreach (House house in houses)
+        {
+            if (house.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - house.transform.position.x) + Mathf.Abs(transform.position.y - house.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(house.gameObject))
+                    {
+                        house.VistoPorEnemigo();
+                        objetosVistos.Add(house.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(house.gameObject))
+                    {
+                        house.DesvistoPorEnemigo();
+                        objetosVistos.Remove(house.gameObject);
+                    }
+                }
+
+            }
+        }
 
     }
+
 
     private bool EnemyBaseInRange()
     {
@@ -480,7 +535,7 @@ public class Unit : MonoBehaviour
     public void ResetVision()
     {
         enemigosQueMeVen = 0;
-        enemigosVistos.Clear();
+        objetosVistos.Clear();
         tilesVistos.Clear();
     }
 

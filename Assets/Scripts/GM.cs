@@ -48,8 +48,10 @@ public class GM : MonoBehaviour
         GetGoldIncome(1);
         FogTiles();
         Unit[] units = FindObjectsOfType<Unit>();
-        MostrarUnidadesJugador(units);
-        CompruebaVisionUnidades(units);
+        House[] houses = FindObjectsOfType<House>();
+        Village[] villages = FindObjectsOfType<Village>();
+        MostrarUnidadesJugador(units, villages, houses);
+        CompruebaVisionUnidades(units, villages, houses);
     }
 
     private void Update()
@@ -143,6 +145,8 @@ public class GM : MonoBehaviour
             unit.hasMoved = false;
             unit.ResetWeaponIcons();
         }
+        Village[] villages = FindObjectsOfType<Village>();
+        House[] houses = FindObjectsOfType<House>();
 
         if (playerTurn == 1) {
             playerIcon.sprite = playerTwoIcon;
@@ -153,8 +157,8 @@ public class GM : MonoBehaviour
         }
 
         FogTiles();
-        MostrarUnidadesJugador(units);
-        CompruebaVisionUnidades(units);
+        MostrarUnidadesJugador(units, villages, houses);
+        CompruebaVisionUnidades(units, villages, houses);
         GetGoldIncome(playerTurn);
         GetComponent<CharacterCreation>().CloseCharacterCreationMenus();
         createdUnit = null;
@@ -222,7 +226,7 @@ public class GM : MonoBehaviour
     }
 
 
-    public void MostrarUnidadesJugador(Unit[] unidades)
+    public void MostrarUnidadesJugador(Unit[] unidades, Village[] villages, House[] houses)
     {
         foreach (Unit unit in unidades)
         {
@@ -237,9 +241,35 @@ public class GM : MonoBehaviour
             unit.ResetVision();
             
         }
+
+        foreach (Village village in villages)
+        {
+            if (playerTurn == village.playerNumber)
+            {
+                village.Mostrar();
+            }
+            else
+            {
+                village.Esconder();
+            }
+            village.ResetVision();
+        }
+
+        foreach (House house in houses)
+        {
+            if (playerTurn == house.playerNumber)
+            {
+                house.Mostrar();
+            }
+            else
+            {
+                house.Esconder();
+            }
+            house.ResetVision();
+        }
     }
 
-    public void CompruebaVisionUnidades(Unit[] unidades)
+    public void CompruebaVisionUnidades(Unit[] unidades, Village[] villages, House[] houses)
     {
         foreach(Unit unit in unidades)
         {
@@ -247,6 +277,24 @@ public class GM : MonoBehaviour
             {
                 unit.GetVisibleEnemies();
                 unit.VisibleTiles();
+            }
+        }
+
+        foreach (House house in houses)
+        {
+            if (playerTurn == house.playerNumber)
+            {
+                house.GetVisibleEnemies();
+                house.VisibleTiles();
+            }
+        }
+
+        foreach (Village village in villages)
+        {
+            if (playerTurn == village.playerNumber)
+            {
+                village.GetVisibleEnemies();
+                village.VisibleTiles();
             }
         }
     }

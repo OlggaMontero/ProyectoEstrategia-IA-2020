@@ -312,11 +312,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &7682335
 AudioSource:
@@ -895,11 +900,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &34959663
 AudioSource:
@@ -1214,11 +1224,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &36808065
 AudioSource:
@@ -1715,11 +1730,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &43979533
 AudioSource:
@@ -2110,11 +2130,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &50318296
 AudioSource:
@@ -2406,11 +2431,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &52071989
 MonoBehaviour:
@@ -2801,11 +2831,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &56446223
 MonoBehaviour:
@@ -3244,11 +3279,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &59683837
 AudioSource:
@@ -3540,11 +3580,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &64236939
 MonoBehaviour:
@@ -3882,11 +3927,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &65174046
 AudioSource:
@@ -4201,11 +4251,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &66351200
 AudioSource:
@@ -4796,11 +4851,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &81235630
 MonoBehaviour:
@@ -5138,11 +5198,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &81410941
 AudioSource:
@@ -5457,11 +5522,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &85408170
 AudioSource:
@@ -5776,11 +5846,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &88063170
 AudioSource:
@@ -6197,11 +6272,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &104010516
 AudioSource:
@@ -6493,11 +6573,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &104823035
 MonoBehaviour:
@@ -6812,11 +6897,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &105868542
 MonoBehaviour:
@@ -7154,11 +7244,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &109473985
 AudioSource:
@@ -7473,11 +7568,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &109726377
 AudioSource:
@@ -7792,11 +7892,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &124546860
 AudioSource:
@@ -8220,11 +8325,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &131437368
 MonoBehaviour:
@@ -8641,11 +8751,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &144349176
 AudioSource:
@@ -9061,11 +9176,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &170869231
 AudioSource:
@@ -9459,11 +9579,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &182635102
 MonoBehaviour:
@@ -10003,11 +10128,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &195476662
 AudioSource:
@@ -10322,11 +10452,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &195983983
 AudioSource:
@@ -10641,11 +10776,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &197458176
 AudioSource:
@@ -10960,11 +11100,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &198426356
 AudioSource:
@@ -11256,11 +11401,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &203305850
 MonoBehaviour:
@@ -11598,11 +11748,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &204961382
 AudioSource:
@@ -11894,11 +12049,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &210990374
 MonoBehaviour:
@@ -12438,11 +12598,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &226572079
 AudioSource:
@@ -12757,11 +12922,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &233710389
 AudioSource:
@@ -13155,11 +13325,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &243340223
 MonoBehaviour:
@@ -13552,11 +13727,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &250467589
 MonoBehaviour:
@@ -14000,11 +14180,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &255484936
 MonoBehaviour:
@@ -14399,11 +14584,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &274697719
 MonoBehaviour:
@@ -14741,11 +14931,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &274722549
 AudioSource:
@@ -15274,11 +15469,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &294567431
 AudioSource:
@@ -15570,11 +15770,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &294708504
 MonoBehaviour:
@@ -15889,11 +16094,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &296768524
 MonoBehaviour:
@@ -16145,7 +16355,7 @@ RectTransform:
   m_Children:
   - {fileID: 1219017614}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16320,11 +16530,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &305147944
 MonoBehaviour:
@@ -16662,11 +16877,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &316541628
 AudioSource:
@@ -17224,11 +17444,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &332030149
 MonoBehaviour:
@@ -17566,11 +17791,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &334669067
 AudioSource:
@@ -17987,11 +18217,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &338675789
 AudioSource:
@@ -18150,7 +18385,7 @@ Transform:
   - {fileID: 1798396784}
   - {fileID: 1119581471}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &344487109
 PrefabInstance:
@@ -18343,11 +18578,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &344487114
 AudioSource:
@@ -18508,7 +18748,7 @@ RectTransform:
   - {fileID: 2078819738}
   - {fileID: 2012834110}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18845,11 +19085,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &361919931
 MonoBehaviour:
@@ -19164,11 +19409,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &372094765
 MonoBehaviour:
@@ -19506,11 +19756,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &374179485
 AudioSource:
@@ -19825,11 +20080,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &374883582
 AudioSource:
@@ -20144,11 +20404,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &378354449
 AudioSource:
@@ -20647,11 +20912,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &391117490
 AudioSource:
@@ -20966,11 +21236,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &391919839
 AudioSource:
@@ -21285,11 +21560,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &397989540
 AudioSource:
@@ -21581,11 +21861,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &400494566
 MonoBehaviour:
@@ -21923,11 +22208,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &404730849
 AudioSource:
@@ -22242,11 +22532,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &405197366
 AudioSource:
@@ -22561,11 +22856,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &415575201
 AudioSource:
@@ -22880,11 +23180,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &416495806
 AudioSource:
@@ -23008,6 +23313,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 5.5}
   m_EdgeRadius: 0
+--- !u!1001 &419332471
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9410396
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.137535
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380092, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915751925507380093, guid: 3a7f9032994daa748afb1fd85d4efb50,
+        type: 3}
+      propertyPath: m_Name
+      value: Blue House
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a7f9032994daa748afb1fd85d4efb50, type: 3}
 --- !u!1001 &419491353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23176,11 +23550,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &419491357
 MonoBehaviour:
@@ -23495,11 +23874,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &420208625
 MonoBehaviour:
@@ -23837,11 +24221,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &425040192
 AudioSource:
@@ -24293,11 +24682,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &433282605
 MonoBehaviour:
@@ -24727,11 +25121,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &438255270
 AudioSource:
@@ -25023,11 +25422,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &439345488
 MonoBehaviour:
@@ -25342,11 +25746,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &440382074
 MonoBehaviour:
@@ -25684,11 +26093,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &447598598
 AudioSource:
@@ -26003,11 +26417,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &450063861
 AudioSource:
@@ -26322,11 +26741,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &452165249
 AudioSource:
@@ -26618,11 +27042,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &455764873
 MonoBehaviour:
@@ -26960,11 +27389,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &459237369
 AudioSource:
@@ -27838,11 +28272,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &498089208
 AudioSource:
@@ -28259,11 +28698,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &506281422
 AudioSource:
@@ -28578,11 +29022,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &507145829
 AudioSource:
@@ -28874,11 +29323,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &509440958
 MonoBehaviour:
@@ -29216,11 +29670,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &510539437
 AudioSource:
@@ -29693,11 +30152,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &515354205
 AudioSource:
@@ -30067,11 +30531,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &520163233
 MonoBehaviour:
@@ -30695,11 +31164,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &560486482
 AudioSource:
@@ -31014,11 +31488,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &566631231
 AudioSource:
@@ -31310,11 +31789,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &577266267
 MonoBehaviour:
@@ -31629,11 +32113,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &577725720
 MonoBehaviour:
@@ -32072,11 +32561,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &580018701
 AudioSource:
@@ -32450,11 +32944,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &590018696
 MonoBehaviour:
@@ -32792,11 +33291,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &593079248
 AudioSource:
@@ -33088,11 +33592,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &597719592
 MonoBehaviour:
@@ -33632,11 +34141,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &602872998
 AudioSource:
@@ -34083,11 +34597,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &614811577
 AudioSource:
@@ -34379,11 +34898,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &616752361
 MonoBehaviour:
@@ -34823,11 +35347,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &632427579
 AudioSource:
@@ -35119,11 +35648,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &633593812
 MonoBehaviour:
@@ -35461,11 +35995,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &634256812
 AudioSource:
@@ -35757,11 +36296,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &635386898
 MonoBehaviour:
@@ -36076,11 +36620,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &636967923
 MonoBehaviour:
@@ -36395,11 +36944,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &639951998
 MonoBehaviour:
@@ -37055,11 +37609,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &655198855
 MonoBehaviour:
@@ -37397,11 +37956,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &656796799
 AudioSource:
@@ -37794,11 +38358,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &673336005
 MonoBehaviour:
@@ -38113,11 +38682,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &676666542
 MonoBehaviour:
@@ -38616,11 +39190,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &694530750
 MonoBehaviour:
@@ -39013,11 +39592,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &714254136
 MonoBehaviour:
@@ -39294,7 +39878,7 @@ Transform:
   - {fileID: 1056624931}
   - {fileID: 2076092085}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &717415284
 PrefabInstance:
@@ -39487,11 +40071,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &717415289
 AudioSource:
@@ -39999,11 +40588,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &724280526
 AudioSource:
@@ -40318,11 +40912,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &726217852
 AudioSource:
@@ -40637,11 +41236,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &728442690
 AudioSource:
@@ -40933,11 +41537,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &735020814
 MonoBehaviour:
@@ -41252,11 +41861,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &737484373
 MonoBehaviour:
@@ -41806,11 +42420,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &745392150
 AudioSource:
@@ -42125,11 +42744,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &746643391
 AudioSource:
@@ -42421,11 +43045,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &747400664
 MonoBehaviour:
@@ -42864,11 +43493,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &759709195
 AudioSource:
@@ -43259,11 +43893,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &764434935
 AudioSource:
@@ -43578,11 +44217,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &766879905
 AudioSource:
@@ -43999,11 +44643,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &770014044
 AudioSource:
@@ -44295,11 +44944,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &771221037
 MonoBehaviour:
@@ -44716,11 +45370,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &781034116
 MonoBehaviour:
@@ -45058,11 +45717,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &781979684
 AudioSource:
@@ -45354,11 +46018,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &782058022
 MonoBehaviour:
@@ -45775,11 +46444,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &799119855
 MonoBehaviour:
@@ -46349,11 +47023,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &853114503
 AudioSource:
@@ -47041,11 +47720,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &886748956
 AudioSource:
@@ -47442,11 +48126,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &896733410
 AudioSource:
@@ -47761,11 +48450,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &900271583
 AudioSource:
@@ -48057,11 +48751,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &902463047
 MonoBehaviour:
@@ -48399,11 +49098,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &908170017
 AudioSource:
@@ -48718,11 +49422,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &909758175
 AudioSource:
@@ -49113,11 +49822,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &913368989
 AudioSource:
@@ -49432,11 +50146,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &915208821
 AudioSource:
@@ -49751,11 +50470,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &916871612
 AudioSource:
@@ -50122,11 +50846,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &930356452
 MonoBehaviour:
@@ -50564,11 +51293,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &935431823
 AudioSource:
@@ -50883,11 +51617,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &935599616
 AudioSource:
@@ -51179,11 +51918,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &938491541
 MonoBehaviour:
@@ -51623,11 +52367,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &956552323
 AudioSource:
@@ -51919,11 +52668,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &956601268
 MonoBehaviour:
@@ -52261,11 +53015,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &959590390
 AudioSource:
@@ -52580,11 +53339,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &966185820
 AudioSource:
@@ -52745,7 +53509,7 @@ Transform:
   - {fileID: 1283772683}
   - {fileID: 651248885}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &972919353
 PrefabInstance:
@@ -52915,11 +53679,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &972919357
 MonoBehaviour:
@@ -53357,11 +54126,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &980159409
 AudioSource:
@@ -53676,11 +54450,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &980577064
 AudioSource:
@@ -53946,7 +54725,7 @@ Transform:
   - {fileID: 1394850841}
   - {fileID: 1750430764}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991765576
 GameObject:
@@ -54319,11 +55098,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &992586890
 AudioSource:
@@ -55099,11 +55883,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1025164900
 MonoBehaviour:
@@ -55517,11 +56306,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1030426142
 AudioSource:
@@ -55675,7 +56469,7 @@ Transform:
   - {fileID: 251452378}
   - {fileID: 2130201619}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1035908028
 PrefabInstance:
@@ -55868,11 +56662,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1035908033
 AudioSource:
@@ -56060,7 +56859,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1041164640
 PrefabInstance:
@@ -56230,11 +57029,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1041164644
 MonoBehaviour:
@@ -56651,11 +57455,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1048013698
 MonoBehaviour:
@@ -56970,11 +57779,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1051840248
 MonoBehaviour:
@@ -57312,11 +58126,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1055993752
 AudioSource:
@@ -57759,11 +58578,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1059046237
 AudioSource:
@@ -58078,11 +58902,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1059974735
 AudioSource:
@@ -58374,11 +59203,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1066837207
 MonoBehaviour:
@@ -58693,11 +59527,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1068004775
 MonoBehaviour:
@@ -59012,11 +59851,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1070006490
 MonoBehaviour:
@@ -59431,11 +60275,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1074227227
 MonoBehaviour:
@@ -59948,11 +60797,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1080048845
 AudioSource:
@@ -60244,11 +61098,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1086201590
 MonoBehaviour:
@@ -60563,11 +61422,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1089391336
 MonoBehaviour:
@@ -60905,11 +61769,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1090330309
 AudioSource:
@@ -61325,11 +62194,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1098787714
 AudioSource:
@@ -61644,11 +62518,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1105014639
 AudioSource:
@@ -61805,7 +62684,7 @@ RectTransform:
   m_Children:
   - {fileID: 132346285}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -62159,11 +63038,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1110481967
 AudioSource:
@@ -62478,11 +63362,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1112046656
 AudioSource:
@@ -62899,11 +63788,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1114925595
 AudioSource:
@@ -63195,11 +64089,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1116033166
 MonoBehaviour:
@@ -63694,11 +64593,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1129881385
 AudioSource:
@@ -63851,7 +64755,7 @@ Transform:
   m_LocalScale: {x: 0.16062763, y: 0.16062763, z: 0.16062763}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1130307151
 SpriteRenderer:
@@ -64094,11 +64998,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1139087450
 AudioSource:
@@ -64514,11 +65423,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1141232184
 AudioSource:
@@ -64990,11 +65904,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1152410326
 AudioSource:
@@ -65286,11 +66205,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1155313306
 MonoBehaviour:
@@ -65605,11 +66529,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1158508159
 MonoBehaviour:
@@ -65947,11 +66876,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1159141633
 AudioSource:
@@ -66243,11 +67177,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1169598134
 MonoBehaviour:
@@ -66585,11 +67524,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1170245810
 AudioSource:
@@ -66881,11 +67825,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1170950931
 MonoBehaviour:
@@ -67325,11 +68274,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1172518950
 AudioSource:
@@ -67621,11 +68575,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1173229866
 MonoBehaviour:
@@ -68165,11 +69124,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1186497887
 AudioSource:
@@ -68484,11 +69448,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1194635512
 AudioSource:
@@ -68803,11 +69772,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1195966097
 AudioSource:
@@ -69122,11 +70096,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1200269597
 AudioSource:
@@ -69441,11 +70420,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1204811541
 AudioSource:
@@ -69737,11 +70721,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1205634213
 MonoBehaviour:
@@ -70164,11 +71153,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1208878072
 AudioSource:
@@ -70559,11 +71553,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1216695119
 AudioSource:
@@ -70937,11 +71936,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1218197553
 MonoBehaviour:
@@ -71343,11 +72347,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1222014887
 MonoBehaviour:
@@ -71787,11 +72796,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1240840234
 MonoBehaviour:
@@ -72129,11 +73143,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1242788745
 AudioSource:
@@ -72602,11 +73621,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1270796182
 AudioSource:
@@ -72898,11 +73922,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1273317882
 MonoBehaviour:
@@ -73240,11 +74269,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1276914740
 AudioSource:
@@ -73763,11 +74797,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1288487823
 MonoBehaviour:
@@ -74082,11 +75121,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1290871661
 MonoBehaviour:
@@ -74619,11 +75663,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1293537583
 AudioSource:
@@ -74915,11 +75964,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1295646763
 MonoBehaviour:
@@ -75667,11 +76721,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1322912606
 MonoBehaviour:
@@ -76009,11 +77068,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1329829271
 AudioSource:
@@ -81067,7 +82131,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1001 &1336714171
 PrefabInstance:
@@ -81237,11 +82301,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1336714175
 MonoBehaviour:
@@ -81680,11 +82749,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1348453431
 AudioSource:
@@ -82101,11 +83175,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1348895249
 AudioSource:
@@ -82397,11 +83476,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1352042891
 MonoBehaviour:
@@ -82739,11 +83823,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1352818256
 AudioSource:
@@ -83137,11 +84226,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1370002568
 MonoBehaviour:
@@ -83693,11 +84787,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1387644137
 AudioSource:
@@ -84012,11 +85111,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1387683111
 AudioSource:
@@ -84514,11 +85618,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1401141766
 AudioSource:
@@ -84810,11 +85919,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1408967924
 MonoBehaviour:
@@ -85211,11 +86325,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1413787309
 MonoBehaviour:
@@ -85553,11 +86672,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1416121446
 AudioSource:
@@ -85872,11 +86996,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1417725735
 AudioSource:
@@ -86191,11 +87320,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1418596571
 AudioSource:
@@ -86510,11 +87644,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1425509804
 AudioSource:
@@ -86930,11 +88069,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1434461723
 AudioSource:
@@ -87226,11 +88370,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1436299381
 MonoBehaviour:
@@ -87545,11 +88694,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1440109982
 MonoBehaviour:
@@ -87887,11 +89041,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1447809189
 AudioSource:
@@ -88183,11 +89342,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1452590014
 MonoBehaviour:
@@ -88502,11 +89666,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1458859945
 MonoBehaviour:
@@ -88844,11 +90013,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1464549009
 AudioSource:
@@ -89265,11 +90439,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1465926634
 AudioSource:
@@ -89584,11 +90763,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1471003247
 AudioSource:
@@ -90094,11 +91278,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1492321151
 MonoBehaviour:
@@ -90436,11 +91625,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1494750327
 AudioSource:
@@ -90830,11 +92024,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1514378389
 AudioSource:
@@ -91617,11 +92816,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1533813117
 AudioSource:
@@ -92015,11 +93219,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1538228182
 MonoBehaviour:
@@ -92459,11 +93668,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1541269240
 AudioSource:
@@ -92755,11 +93969,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1541971492
 MonoBehaviour:
@@ -93097,11 +94316,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1544262592
 AudioSource:
@@ -93510,11 +94734,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1558041868
 AudioSource:
@@ -93806,11 +95035,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1562322891
 MonoBehaviour:
@@ -94321,11 +95555,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1566776178
 MonoBehaviour:
@@ -94710,11 +95949,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1578325669
 AudioSource:
@@ -95029,11 +96273,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1579578242
 AudioSource:
@@ -95450,11 +96699,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1590168829
 AudioSource:
@@ -95769,11 +97023,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1591341787
 AudioSource:
@@ -96134,11 +97393,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1611944352
 AudioSource:
@@ -96453,11 +97717,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1611954370
 AudioSource:
@@ -96772,11 +98041,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1613536946
 AudioSource:
@@ -97374,11 +98648,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1619892946
 MonoBehaviour:
@@ -97693,11 +98972,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1620563498
 MonoBehaviour:
@@ -98035,11 +99319,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1622870103
 AudioSource:
@@ -98456,11 +99745,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1639555210
 AudioSource:
@@ -98752,11 +100046,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1646561083
 MonoBehaviour:
@@ -99189,11 +100488,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1648085719
 MonoBehaviour:
@@ -99590,11 +100894,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1663930028
 MonoBehaviour:
@@ -99909,11 +101218,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1677430744
 MonoBehaviour:
@@ -100228,11 +101542,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1678504940
 MonoBehaviour:
@@ -100570,11 +101889,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1678869999
 AudioSource:
@@ -100866,11 +102190,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1683570501
 MonoBehaviour:
@@ -101185,11 +102514,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1684834534
 MonoBehaviour:
@@ -101710,11 +103044,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1710357718
 AudioSource:
@@ -102210,11 +103549,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1711553351
 AudioSource:
@@ -102506,11 +103850,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1711935858
 MonoBehaviour:
@@ -102848,11 +104197,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1714478689
 AudioSource:
@@ -103245,11 +104599,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1717476627
 MonoBehaviour:
@@ -103564,11 +104923,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1721311689
 MonoBehaviour:
@@ -104007,11 +105371,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1724103323
 AudioSource:
@@ -104303,11 +105672,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1736421364
 MonoBehaviour:
@@ -104645,11 +106019,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1739070959
 AudioSource:
@@ -105109,11 +106488,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1748466688
 AudioSource:
@@ -105310,7 +106694,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.67
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -105338,7 +106722,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1750430763
 PrefabInstance:
@@ -105441,7 +106825,7 @@ PrefabInstance:
     - target: {fileID: 3293640991218369722, guid: e29861ac58e55d04ca67678a523a8c67,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.63
+      value: -4.842
       objectReference: {fileID: 0}
     - target: {fileID: 3293640991218369722, guid: e29861ac58e55d04ca67678a523a8c67,
         type: 3}
@@ -105766,11 +107150,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1756615228
 MonoBehaviour:
@@ -106108,11 +107497,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1759820617
 AudioSource:
@@ -106404,11 +107798,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1762012404
 MonoBehaviour:
@@ -106723,11 +108122,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1770723113
 MonoBehaviour:
@@ -107042,11 +108446,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1771140432
 MonoBehaviour:
@@ -107463,11 +108872,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1775654325
 MonoBehaviour:
@@ -107942,11 +109356,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1786219326
 MonoBehaviour:
@@ -108360,11 +109779,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1791973982
 AudioSource:
@@ -108679,11 +110103,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1794443141
 AudioSource:
@@ -109017,11 +110446,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1798299015
 MonoBehaviour:
@@ -109434,11 +110868,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1799110428
 AudioSource:
@@ -109730,11 +111169,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1804021311
 MonoBehaviour:
@@ -110147,11 +111591,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1819373771
 AudioSource:
@@ -110466,11 +111915,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1822165052
 AudioSource:
@@ -110886,11 +112340,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1836161847
 AudioSource:
@@ -111257,11 +112716,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1837391436
 MonoBehaviour:
@@ -111599,11 +113063,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1847516775
 AudioSource:
@@ -111895,11 +113364,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1852377160
 MonoBehaviour:
@@ -112214,11 +113688,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1857781126
 MonoBehaviour:
@@ -112533,11 +114012,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1862477176
 MonoBehaviour:
@@ -112852,11 +114336,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1863153859
 MonoBehaviour:
@@ -113171,11 +114660,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1867250178
 MonoBehaviour:
@@ -114031,11 +115525,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1891641683
 AudioSource:
@@ -114425,11 +115924,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1894719930
 AudioSource:
@@ -114744,11 +116248,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1910274362
 AudioSource:
@@ -115165,11 +116674,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1918396205
 AudioSource:
@@ -115720,7 +117234,7 @@ Transform:
   - {fileID: 1186497883}
   - {fileID: 2065446663}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1928099261
 GameObject:
@@ -116014,11 +117528,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1929089190
 AudioSource:
@@ -116578,11 +118097,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1947759073
 AudioSource:
@@ -116961,7 +118485,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1952679706
 GameObject:
@@ -117338,11 +118862,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1957015664
 AudioSource:
@@ -117657,11 +119186,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1961771459
 AudioSource:
@@ -118076,11 +119610,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &1975509099
 AudioSource:
@@ -118372,11 +119911,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &1993722723
 MonoBehaviour:
@@ -118714,11 +120258,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2000223050
 AudioSource:
@@ -119033,11 +120582,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2000459431
 AudioSource:
@@ -119329,11 +120883,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2001413347
 MonoBehaviour:
@@ -119648,11 +121207,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2003159641
 MonoBehaviour:
@@ -120257,11 +121821,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2017857926
 MonoBehaviour:
@@ -120599,11 +122168,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2021224314
 AudioSource:
@@ -120895,11 +122469,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2023876384
 MonoBehaviour:
@@ -121322,11 +122901,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2036648547
 AudioSource:
@@ -121743,11 +123327,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2044089860
 AudioSource:
@@ -122039,11 +123628,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2046886275
 MonoBehaviour:
@@ -122381,11 +123975,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2050177699
 AudioSource:
@@ -122556,6 +124155,7 @@ MonoBehaviour:
   defenseDamageInfo: {fileID: 432247200}
   player1Gold: 0
   player2Gold: 0
+  goldIncomePerTurn: 0
   player1GoldText: {fileID: 1565762069}
   player2GoldText: {fileID: 2124063381}
   createdUnit: {fileID: 0}
@@ -122578,6 +124178,8 @@ MonoBehaviour:
   player2openButton: {fileID: 1287036342}
   player1Menu: {fileID: 1056624929}
   player2Menu: {fileID: 251452376}
+  m_distanceToAllowSpawn: 1.9
+  m_distanceToAllowSpawnForVillage: 4.9
 --- !u!82 &2052250109
 AudioSource:
   m_ObjectHideFlags: 0
@@ -122981,11 +124583,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2065446667
 AudioSource:
@@ -123277,11 +124884,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2066830746
 MonoBehaviour:
@@ -123671,11 +125283,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2072971585
 MonoBehaviour:
@@ -124089,11 +125706,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2076577442
 MonoBehaviour:
@@ -124431,11 +126053,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2076893068
 AudioSource:
@@ -124826,11 +126453,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2080056721
 AudioSource:
@@ -125122,11 +126754,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2080796360
 MonoBehaviour:
@@ -125441,11 +127078,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2084681940
 MonoBehaviour:
@@ -125783,11 +127425,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2092154728
 AudioSource:
@@ -126079,11 +127726,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2096019048
 MonoBehaviour:
@@ -126451,11 +128103,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2103569876
 MonoBehaviour:
@@ -126872,11 +128529,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2107063313
 MonoBehaviour:
@@ -127214,11 +128876,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2112582641
 AudioSource:
@@ -127878,11 +129545,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2133950547
 AudioSource:
@@ -128174,11 +129846,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!114 &2138449894
 MonoBehaviour:
@@ -128516,11 +130193,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2140220801
 AudioSource:
@@ -128835,11 +130517,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   creatableColor: {r: 0.9150943, g: 0.5480776, b: 0, a: 1}
+  fogColor: {r: 0.2830189, g: 0.21493416, b: 0.21493416, a: 1}
   obstacles:
     serializedVersion: 2
     m_Bits: 512
   isWalkable: 0
   isCreatable: 0
+  isNearToBase: 0
+  isNearToVillage: 0
+  isNearToBaseVillage: 0
+  m_nearToBaseIndex: 0
   amount: 0.025
 --- !u!82 &2146339909
 AudioSource:
