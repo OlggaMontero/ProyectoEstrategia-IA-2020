@@ -59,7 +59,7 @@ public class Tile : MonoBehaviour
     private void f_InitializeNode()
     {
         m_EnemyNode = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
-        m_SelfNode = m_EnemyNode;
+        m_SelfNode = new BoxNode(0, 0, 0, 0, 0, 0, new Vector2(transform.position.x, transform.position.y), Vector2Int.zero);
     }
 
     public void checkTilesNearVillages()
