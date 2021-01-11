@@ -243,6 +243,7 @@ public class GM : MonoBehaviour
 
         for (int i = 0; i < _ia_units_array.Length; i++)
         {
+            _ia_units_array[i].f_Select_Unit_attack();
             if (_ia_units_array[i].enemiesInRange.Count <= 0 || _ia_units_array[i].m_enemyBaseInRange)
             {
                 if (i > 0)
@@ -398,6 +399,7 @@ public class GM : MonoBehaviour
             if (_unit_aux is null || player_unit.health < _unit_aux.health) _unit_aux = player_unit; //focus al que menos vida tenga
         }
         if(_unit_aux != null) iaUnit.Attack(_unit_aux);
+        iaUnit.hasAttacked = true;
     }
 
     private void f_ia_Move(Unit iaUnit)
@@ -406,6 +408,7 @@ public class GM : MonoBehaviour
         if (!iaUnit.isSelected) iaUnit.f_Select_Unit_attack();
         //List<Tile> aux_Destinies = new List<Tile>(); //prueba borrable
         Tile t_destiny = null;
+        Debug.LogError("Hola");
         Tile aux_base = null;
         bool near_Influence = false;
         foreach (Tile t in iaUnit._tilesReacheable) //Elijo hacia que unidad me muevo
@@ -473,17 +476,26 @@ public class GM : MonoBehaviour
             }
         }
         if (t_destiny is null /*|| Vector2.Distance(t_destiny.transform.position, iaUnit.transform.position) < 0.8*/) //Quiero evitar que se mueva a la casilla sobre la que ya esta pero en principio esa ni esta en la lista
-            iaUnit.hasMoved = true;
+        {
+            print("No ha encontrado destino");
+            ResetTiles();
+            iaUnit.FinishgMovement();
+            iaUnit.hasAttacked = true;
+        }
         else
+        {
+            t_destiny.rend.color = Color.red;
             t_destiny.f_Buy_Move(); //Creo que a veces nunca se mueve, pero llama a moverse y como no completa el movimiento no pone a true iaUnit.hasmoved, Casi 100% seguro que entra aqui en una especie de bucle infinito
+        }
         timer = true;
         StartCoroutine(WaitForMoveToEnd(iaUnit));
     }
     IEnumerator WaitForMoveToEnd(Unit iaUnit)
     {
         yield return new WaitUntil(() => iaUnit.hasMoved || timeToPassToNextUnit > 5f); //iaUnit.tileSpeed/iaUnit.moveSpeed + 0.2f
+        ResetTiles();
         yield return new WaitForSeconds(0.5f);
-        iaUnit.hasMoved = true; //para segurarse
+        iaUnit.FinishgMovement();//para segurarse
         //GridGenerator.instance.f_GenerateSelfInfluenceMap();
         f_ia_Attack(iaUnit);
         timer = false;

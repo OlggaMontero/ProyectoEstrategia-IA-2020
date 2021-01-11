@@ -71,6 +71,7 @@ public class GridGenerator : MonoBehaviour
             for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
             {
                 f_ClearEnemyNodes(i, j);
+                print("a");
             }
         }
 
@@ -312,6 +313,26 @@ public class GridGenerator : MonoBehaviour
         }
         value /= distance;
         return value;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if(m_EnemyGrid is null)
+        {
+            return;
+        }
+        for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
+        {
+            for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
+            {
+                float x = 0;
+                foreach (float f in m_EnemyGrid[i, j].m_EnemyNode.Influence)
+                    x += f;
+
+                Gizmos.color = Color.Lerp(Color.black, Color.white, x);
+                Gizmos.DrawCube(m_EnemyGrid[i, j].m_EnemyNode.position, Vector2.one);
+            }
+        }
     }
 
 }
