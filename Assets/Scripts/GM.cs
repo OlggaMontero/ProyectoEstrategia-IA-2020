@@ -72,7 +72,7 @@ public class GM : MonoBehaviour
         _state = "Normal";
         _ch_Craeation = GetComponent<CharacterCreation>();
 
-        FogTiles();
+        //FogTiles();
         Unit[] units = FindObjectsOfType<Unit>();
         House[] bases = FindObjectsOfType<House>();
         foreach (House b in bases)
@@ -82,8 +82,8 @@ public class GM : MonoBehaviour
         }
         House[] houses = FindObjectsOfType<House>();
         Village[] villages = FindObjectsOfType<Village>();
-        MostrarUnidadesJugador(units, villages, houses);
-        CompruebaVisionUnidades(units, villages, houses);
+        //MostrarUnidadesJugador(units, villages, houses);
+        //CompruebaVisionUnidades(units, villages, houses);
 
         _ia_units = new List<Unit>();
         source = GetComponent<AudioSource>();
@@ -203,9 +203,9 @@ public class GM : MonoBehaviour
             playerTurn = 1;
         }
 
-        FogTiles();
-        MostrarUnidadesJugador(units, villages, houses);
-        CompruebaVisionUnidades(units, villages, houses);
+        //FogTiles();
+        //MostrarUnidadesJugador(units, villages, houses);
+        //CompruebaVisionUnidades(units, villages, houses);
 
         GetGoldIncome(playerTurn);
         GetComponent<CharacterCreation>().CloseCharacterCreationMenus();
@@ -578,7 +578,7 @@ public class GM : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void MostrarUnidadesJugador(Unit[] unidades, Village[] villages, House[] houses)
+    /*public void MostrarUnidadesJugador(Unit[] unidades, Village[] villages, House[] houses)
     {
         foreach (Unit unit in unidades)
         {
@@ -619,9 +619,9 @@ public class GM : MonoBehaviour
             }
             house.ResetVision();
         }
-    }
+    }*/
 
-    public void CompruebaVisionUnidades(Unit[] unidades, Village[] villages, House[] houses)
+    /*public void CompruebaVisionUnidades(Unit[] unidades, Village[] villages, House[] houses)
     {
         foreach (Unit unit in unidades)
         {
@@ -659,5 +659,5 @@ public class GM : MonoBehaviour
             tile.ResetVision();
             tile.Esconder();
         }
-    }
+    }*/
 }
