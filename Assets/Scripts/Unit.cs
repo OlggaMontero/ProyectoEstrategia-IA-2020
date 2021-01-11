@@ -160,10 +160,21 @@ public class Unit : MonoBehaviour
                 if (tile.isClear() == true)
                 { // is the tile clear from any obstacles
                     tile.Highlight();
-                    _tilesReacheable.Add(tile);
+                    //_tilesReacheable.Add(tile);
                 }
 
             }          
+        }
+        foreach (Tile tile in tiles)
+        {
+            if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= tileSpeed)
+            { // how far he can move
+                if (tile.isClear() == true)
+                { // is the tile clear from any 
+                    _tilesReacheable.Add(tile);
+                }
+
+            }
         }
     }
 
@@ -341,6 +352,14 @@ public class Unit : MonoBehaviour
             yield return null;
         }
 
+        ResetWeaponIcons();
+        GetEnemies();
+        gm.MoveInfoPanel(this);
+        hasMoved = true;
+    }
+
+    public void FinishgMovement()
+    {
         ResetWeaponIcons();
         GetEnemies();
         gm.MoveInfoPanel(this);
