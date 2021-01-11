@@ -243,6 +243,7 @@ public class GM : MonoBehaviour
 
         for (int i = 0; i < _ia_units_array.Length; i++)
         {
+            _ia_units_array[i].f_Select_Unit_attack();
             if (_ia_units_array[i].enemiesInRange.Count <= 0 || _ia_units_array[i].m_enemyBaseInRange)
             {
                 if (i > 0)
@@ -398,6 +399,7 @@ public class GM : MonoBehaviour
             if (_unit_aux is null || player_unit.health < _unit_aux.health) _unit_aux = player_unit; //focus al que menos vida tenga
         }
         if(_unit_aux != null) iaUnit.Attack(_unit_aux);
+        iaUnit.hasAttacked = true;
     }
 
     private void f_ia_Move(Unit iaUnit)
