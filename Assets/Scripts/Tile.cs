@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    private SpriteRenderer rend;
+    public SpriteRenderer rend;
     public Color highlightedColor;
     public Color creatableColor;
 
