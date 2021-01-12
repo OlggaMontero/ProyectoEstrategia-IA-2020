@@ -93,7 +93,7 @@ public class GM : MonoBehaviour
 
     private void Update()
     {
-        if (playerTurn == 1 && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b"))) {
+        if (/*playerTurn == 1 &&*/ (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b"))) {
             EndTurn();
         }
 
@@ -212,6 +212,7 @@ public class GM : MonoBehaviour
         createdUnit = null;
         createdVillage = null;
 
+        GridGenerator.instance.f_ClearEnemyNodes();
         GridGenerator.instance.f_GenerateEnemyInfluenceMap();
 
         if (playerTurn == 2)
@@ -260,7 +261,7 @@ public class GM : MonoBehaviour
         for (int i = 0; i < _ia_units_array.Length; i++)
         {
             _ia_units_array[i].f_Select_Unit_attack();
-            if (_ia_units_array[i].enemiesInRange.Count <= 0 || _ia_units_array[i].m_enemyBaseInRange)
+            if (_ia_units_array[i].enemiesInRange.Count <= 0 || !_ia_units_array[i].m_enemyBaseInRange)
             {
                 if (i > 0)
                     StartCoroutine(WaitToExecute(aux, _ia_units_array[i], "Move")); //COMO COÑO PUEDE DAR ESTO OUT OF RANGE???? ME LO EXPLICAIS?????
@@ -499,14 +500,14 @@ public class GM : MonoBehaviour
         }
         else
         {
-            t_destiny.rend.color = Color.red;
+            //t_destiny.rend.color = Color.red;
             t_destiny.f_Buy_Move(); //Creo que a veces nunca se mueve, pero llama a moverse y como no completa el movimiento no pone a true iaUnit.hasmoved, Casi 100% seguro que entra aqui en una especie de bucle infinito
         }
-        timer = true;
         StartCoroutine(WaitForMoveToEnd(iaUnit));
     }
     IEnumerator WaitForMoveToEnd(Unit iaUnit)
     {
+        timer = true;
         yield return new WaitUntil(() => iaUnit.hasMoved || timeToPassToNextUnit > 5f); //iaUnit.tileSpeed/iaUnit.moveSpeed + 0.2f
         ResetTiles();
         yield return new WaitForSeconds(0.5f);

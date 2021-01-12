@@ -66,6 +66,7 @@ public class GridGenerator : MonoBehaviour
     /// </summary>
     public void f_GenerateEnemyInfluenceMap()
     {
+        f_ClearEnemyNodes();
         for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
         {
             for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
