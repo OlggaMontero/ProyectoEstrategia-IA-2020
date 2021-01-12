@@ -72,7 +72,7 @@ public class GM : MonoBehaviour
         _state = "Normal";
         _ch_Craeation = GetComponent<CharacterCreation>();
 
-        FogTiles();
+        //FogTiles();
         Unit[] units = FindObjectsOfType<Unit>();
         House[] bases = FindObjectsOfType<House>();
         foreach (House b in bases)
@@ -82,8 +82,8 @@ public class GM : MonoBehaviour
         }
         House[] houses = FindObjectsOfType<House>();
         Village[] villages = FindObjectsOfType<Village>();
-        MostrarUnidadesJugador(units, villages, houses);
-        CompruebaVisionUnidades(units, villages, houses);
+        //MostrarUnidadesJugador(units, villages, houses);
+        //CompruebaVisionUnidades(units, villages, houses);
 
         _ia_units = new List<Unit>();
         source = GetComponent<AudioSource>();
@@ -192,8 +192,8 @@ public class GM : MonoBehaviour
             unit.ResetWeaponIcons();
         }
 
-        Village[] villages = FindObjectsOfType<Village>();
-        House[] houses = FindObjectsOfType<House>();
+        //Village[] villages = FindObjectsOfType<Village>();
+        //House[] houses = FindObjectsOfType<House>();
 
         if (playerTurn == 1) {
             playerIcon.sprite = playerTwoIcon;
@@ -203,9 +203,9 @@ public class GM : MonoBehaviour
             playerTurn = 1;
         }
 
-        FogTiles();
-        MostrarUnidadesJugador(units, villages, houses);
-        CompruebaVisionUnidades(units, villages, houses);
+        //FogTiles();
+        //MostrarUnidadesJugador(units, villages, houses);
+        //CompruebaVisionUnidades(units, villages, houses);
 
         GetGoldIncome(playerTurn);
         GetComponent<CharacterCreation>().CloseCharacterCreationMenus();

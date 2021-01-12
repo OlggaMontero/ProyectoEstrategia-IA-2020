@@ -109,10 +109,11 @@ public class Tile : MonoBehaviour
 
     public void Reset()
     {
-        if (unidadesViendome >= 1)
+        /*if (unidadesViendome >= 1)
         {
             rend.color = Color.white;
-        }
+        }*/
+        rend.color = Color.white;
         isWalkable = false;
         isCreatable = false;
     }
