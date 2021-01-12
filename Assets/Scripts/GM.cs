@@ -497,6 +497,7 @@ public class GM : MonoBehaviour
             ResetTiles();
             iaUnit.FinishgMovement();
             iaUnit.hasAttacked = true;
+            iaUnit.hasMoved = true;
         }
         else
         {

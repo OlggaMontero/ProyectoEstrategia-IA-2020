@@ -82,12 +82,7 @@ public class GridGenerator : MonoBehaviour
         {
             for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
             {
-                m_EnemyGrid[i, j].m_EnemyNode.ArcherValue = 0;
-                m_EnemyGrid[i, j].m_EnemyNode.BaseValue = 0;
-                m_EnemyGrid[i, j].m_EnemyNode.KingValue = 0;
-                m_EnemyGrid[i, j].m_EnemyNode.KnightValue = 0;
-                m_EnemyGrid[i, j].m_EnemyNode.VillageValue = 0;
-                m_EnemyGrid[i, j].m_EnemyNode.BatValue = 0;
+                m_EnemyGrid[i, j].m_EnemyNode = new BoxNode(0, 0, 0, 0, 0, 0, m_EnemyGrid[i, j].m_EnemyNode.position, m_EnemyGrid[i, j].m_EnemyNode.MatrixPosition);
             }
         }
 
@@ -332,6 +327,25 @@ public class GridGenerator : MonoBehaviour
                 Gizmos.DrawCube(m_EnemyGrid[i, j].m_EnemyNode.position, Vector2.one);
             }
         }
+    }
+
+    private void OnGUI()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            for (int i = 0; i < m_EnemyGrid.GetLength(0); i++)
+            {
+                for (int j = 0; j < m_EnemyGrid.GetLength(1); j++)
+                {
+                    float x = 0;
+                    foreach (float f in m_EnemyGrid[i, j].m_EnemyNode.Influence)
+                        x += f;
+                    Rect r = new Rect(new Vector2(j * 30, i * 30), Vector2.one * 30);
+                    GUI.TextArea(r, x.ToString());
+                }
+            }
+        }
+
     }
 
 }
