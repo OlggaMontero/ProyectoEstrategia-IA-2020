@@ -192,8 +192,8 @@ public class GM : MonoBehaviour
             unit.ResetWeaponIcons();
         }
 
-        Village[] villages = FindObjectsOfType<Village>();
-        House[] houses = FindObjectsOfType<House>();
+        //Village[] villages = FindObjectsOfType<Village>();
+        //House[] houses = FindObjectsOfType<House>();
 
         if (playerTurn == 1) {
             playerIcon.sprite = playerTwoIcon;
@@ -578,7 +578,7 @@ public class GM : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    /*public void MostrarUnidadesJugador(Unit[] unidades, Village[] villages, House[] houses)
+    public void MostrarUnidadesJugador(Unit[] unidades, Village[] villages, House[] houses)
     {
         foreach (Unit unit in unidades)
         {
@@ -619,9 +619,9 @@ public class GM : MonoBehaviour
             }
             house.ResetVision();
         }
-    }*/
+    }
 
-    /*public void CompruebaVisionUnidades(Unit[] unidades, Village[] villages, House[] houses)
+    public void CompruebaVisionUnidades(Unit[] unidades, Village[] villages, House[] houses)
     {
         foreach (Unit unit in unidades)
         {
@@ -659,5 +659,5 @@ public class GM : MonoBehaviour
             tile.ResetVision();
             tile.Esconder();
         }
-    }*/
+    }
 }

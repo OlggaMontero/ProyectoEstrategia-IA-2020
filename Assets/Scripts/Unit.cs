@@ -377,7 +377,7 @@ public class Unit : MonoBehaviour
         hasMoved = true;
     }
 
-    /*public void VisibleTiles()
+    public void VisibleTiles()
     {
         Tile[] tiles = FindObjectsOfType<Tile>();
         foreach (Tile tile in tiles)
@@ -539,5 +539,5 @@ public class Unit : MonoBehaviour
         enemigosQueMeVen = 0;
         objetosVistos.Clear();
         tilesVistos.Clear();
-    }*/
+    }
 }
