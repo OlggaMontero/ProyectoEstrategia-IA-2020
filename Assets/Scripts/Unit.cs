@@ -47,7 +47,14 @@ public class Unit : MonoBehaviour
     //public Text displayedText;
 
     //IA Variables
-    List<Tile> _tilesReacheable;
+    public List<Tile> _tilesReacheable;
+
+    public int viewRadius;
+
+    private int enemigosQueMeVen = 0;
+
+    private HashSet<GameObject> objetosVistos = new HashSet<GameObject>();
+    private HashSet<GameObject> tilesVistos = new HashSet<GameObject>();
 
     private void Start()
     {
@@ -160,10 +167,21 @@ public class Unit : MonoBehaviour
                 if (tile.isClear() == true)
                 { // is the tile clear from any obstacles
                     tile.Highlight();
-                    _tilesReacheable.Add(tile);
+                    //_tilesReacheable.Add(tile);
                 }
 
             }          
+        }
+        foreach (Tile tile in tiles)
+        {
+            if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= tileSpeed)
+            { // how far he can move
+                if (tile.isClear() == true)
+                { // is the tile clear from any 
+                    _tilesReacheable.Add(tile);
+                }
+
+            }
         }
     }
 
@@ -233,7 +251,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    void Attack(Unit enemy) {
+    public void Attack(Unit enemy) {
         hasAttacked = true;
 
         int enemyDamege = attackDamage - enemy.armor;
@@ -304,6 +322,7 @@ public class Unit : MonoBehaviour
             gm.ResetTiles(); // reset tiles when we die
             gm.RemoveInfoPanel(this);
             Destroy(gameObject);
+            GridGenerator.instance.f_GenerateEnemyInfluenceMap();
         }
 
         gm.UpdateInfoStats();
@@ -332,21 +351,193 @@ public class Unit : MonoBehaviour
 
         while (transform.position.x != movePos.position.x) { // first aligns him with the new tile's x pos
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(movePos.position.x, transform.position.y), moveSpeed * Time.deltaTime);
+            GetVisibleEnemies();
+            VisibleTiles();
             yield return null;
         }
         while (transform.position.y != movePos.position.y) // then y
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, movePos.position.y), moveSpeed * Time.deltaTime);
+            GetVisibleEnemies();
+            VisibleTiles();
             yield return null;
         }
 
-        hasMoved = true;
         ResetWeaponIcons();
         GetEnemies();
         gm.MoveInfoPanel(this);
+        hasMoved = true;
+    }
+
+    public void FinishgMovement()
+    {
+        ResetWeaponIcons();
+        GetEnemies();
+        gm.MoveInfoPanel(this);
+        hasMoved = true;
+    }
+
+    public void VisibleTiles()
+    {
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile tile in tiles)
+        {
+            if (Mathf.Abs(transform.position.x - tile.transform.position.x) + Mathf.Abs(transform.position.y - tile.transform.position.y) <= viewRadius)
+            {
+                if (!tilesVistos.Contains(tile.gameObject))
+                {
+                    tile.VistoPorUnidad();
+                    tilesVistos.Add(tile.gameObject);
+                }
+            }
+            else
+            {
+                if (tilesVistos.Contains(tile.gameObject))
+                {
+                    tile.DesvistoPorUnidad();
+                    tilesVistos.Remove(tile.gameObject);
+                }
+            }
+        }
     }
 
 
+    public void GetVisibleEnemies()
+    {
+        enemiesInRange.Clear();
 
+        Unit[] enemies = FindObjectsOfType<Unit>();
+        foreach (Unit enemy in enemies)
+        {
+            if (enemy.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - enemy.transform.position.x) + Mathf.Abs(transform.position.y - enemy.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(enemy.gameObject))
+                    {
+                        enemy.VistoPorEnemigo();
+                        objetosVistos.Add(enemy.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(enemy.gameObject))
+                    {
+                        enemy.DesvistoPorEnemigo();
+                        objetosVistos.Remove(enemy.gameObject);
+                    }
+                }
 
+            }
+        }
+        VisibleStructures();
+    }
+
+    public void VisibleStructures()
+    {
+        Village[] villages = FindObjectsOfType<Village>();
+        foreach (Village village in villages)
+        {
+            if (village.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - village.transform.position.x) + Mathf.Abs(transform.position.y - village.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(village.gameObject))
+                    {
+                        village.VistoPorEnemigo();
+                        objetosVistos.Add(village.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(village.gameObject))
+                    {
+                        village.DesvistoPorEnemigo();
+                        objetosVistos.Remove(village.gameObject);
+                    }
+                }
+
+            }
+        }
+
+        House[] houses = FindObjectsOfType<House>();
+        foreach (House house in houses)
+        {
+            if (house.playerNumber != gm.playerTurn)
+            {
+                if (Mathf.Abs(transform.position.x - house.transform.position.x) + Mathf.Abs(transform.position.y - house.transform.position.y) <= viewRadius) // check is the enemy is near enough to attack
+                {
+                    if (!objetosVistos.Contains(house.gameObject))
+                    {
+                        house.VistoPorEnemigo();
+                        objetosVistos.Add(house.gameObject);
+                    }
+                }
+                else
+                {
+                    if (objetosVistos.Contains(house.gameObject))
+                    {
+                        house.DesvistoPorEnemigo();
+                        objetosVistos.Remove(house.gameObject);
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    public void VistoPorEnemigo()
+    {
+        enemigosQueMeVen += 1;
+        if (enemigosQueMeVen >= 1)
+        {
+            Mostrar();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void DesvistoPorEnemigo()
+    {
+        enemigosQueMeVen -= 1;
+        if (enemigosQueMeVen == 0)
+        {
+            Esconder();
+        }
+        if (enemigosQueMeVen < 0)
+        {
+            Debug.Log("bug -> unit.cs, no pueden haber negativos enemigos viendote");
+        }
+    }
+
+    public void Mostrar()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            if (sprite.sprite.name == "lights_1")
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, .3f);
+            else
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1.0f);
+        }
+    }
+
+    public void Esconder()
+    {
+        SpriteRenderer[] sprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in sprites)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0.0f);
+        }
+    }
+
+    public void ResetVision()
+    {
+        enemigosQueMeVen = 0;
+        objetosVistos.Clear();
+        tilesVistos.Clear();
+    }
 }

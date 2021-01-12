@@ -71,6 +71,12 @@ public class CharacterCreation : MonoBehaviour
         gm.createdUnit = unit;
 
         DeselectUnit();
+
+        Tile[] tiles = FindObjectsOfType<Tile>();
+        foreach (Tile t in tiles)
+        {
+            t.checkTilesNearVillages();
+        }
         SetCreatableTiles(false);
     }
 
@@ -115,7 +121,7 @@ public class CharacterCreation : MonoBehaviour
         {
             if (village)
             {
-                foreach (House h in bases)
+                foreach (House h in bases) //para evitar spawnear villagesd al lado de las bases
                 {
                     if (h.playerNumber == gm.playerTurn) currentTurnHouse = h.gameObject;                     
                 }
