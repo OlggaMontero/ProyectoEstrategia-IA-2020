@@ -41,6 +41,8 @@ public class GM : MonoBehaviour
 
     private AudioSource source;
 
+
+
     private void Start()
     {
         source = GetComponent<AudioSource>();
@@ -56,7 +58,7 @@ public class GM : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b")) {
+        if (playerTurn == 1 && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("b"))) {
             EndTurn();
         }
 
@@ -171,7 +173,15 @@ public class GM : MonoBehaviour
     void GetGoldIncome(int playerTurn) {
         foreach (Village village in FindObjectsOfType<Village>())
         {
-            if (village.playerNumber == playerTurn)
+            _ia_units_array[i].f_Select_Unit_attack();
+            if (_ia_units_array[i].enemiesInRange.Count <= 0 || _ia_units_array[i].m_enemyBaseInRange)
+            {
+                if (i > 0)
+                    StartCoroutine(WaitToExecute(aux, _ia_units_array[i], "Move")); //COMO COÑO PUEDE DAR ESTO OUT OF RANGE???? ME LO EXPLICAIS?????
+                else
+                    f_ia_Move(_ia_units_array[i]);
+            }
+            else
             {
                 if (playerTurn == 1)
                 {
@@ -267,13 +277,44 @@ public class GM : MonoBehaviour
             }
             house.ResetVision();
         }
+        if (spawn_tile != null) spawn_tile.f_Buy_Move();
+    }
+
+    private void f_ia_Attack(Unit iaUnit)
+    {
+        if (iaUnit.hasAttacked) return;
+        if (!iaUnit.isSelected) iaUnit.f_Select_Unit_attack();
+        if (iaUnit.m_enemyBaseInRange)
+        {
+            iaUnit.AttackBase(_player_house);
+            return;
+        }
+        if (iaUnit.enemiesInRange.Count <= 0) return;
+        Unit _unit_aux = null;
+        foreach(Unit player_unit in iaUnit.enemiesInRange)
+        {
+            if (_unit_aux is null || player_unit.health < _unit_aux.health) _unit_aux = player_unit; //focus al que menos vida tenga
+        }
+        if(_unit_aux != null) iaUnit.Attack(_unit_aux);
+        iaUnit.hasAttacked = true;
     }
 
     public void CompruebaVisionUnidades(Unit[] unidades, Village[] villages, House[] houses)
     {
-        foreach(Unit unit in unidades)
+        if (iaUnit.hasMoved) return;
+        if (!iaUnit.isSelected) iaUnit.f_Select_Unit_attack();
+        //List<Tile> aux_Destinies = new List<Tile>(); //prueba borrable
+        Tile t_destiny = null;
+        Debug.LogError("Hola");
+        Tile aux_base = null;
+        bool near_Influence = false;
+        foreach (Tile t in iaUnit._tilesReacheable) //Elijo hacia que unidad me muevo
         {
-            if (playerTurn == unit.playerNumber)
+            if (aux_base is null || aux_base.m_EnemyNode.BaseValue < t.m_EnemyNode.BaseValue) 
+                aux_base = t;
+            if (t_destiny is null) 
+                t_destiny = t;
+            else //influencia de enemigo mas alta
             {
                 unit.GetVisibleEnemies();
                 unit.VisibleTiles();
@@ -288,6 +329,32 @@ public class GM : MonoBehaviour
                 house.VisibleTiles();
             }
         }
+        if (t_destiny is null /*|| Vector2.Distance(t_destiny.transform.position, iaUnit.transform.position) < 0.8*/) //Quiero evitar que se mueva a la casilla sobre la que ya esta pero en principio esa ni esta en la lista
+        {
+            print("No ha encontrado destino");
+            ResetTiles();
+            iaUnit.FinishgMovement();
+            iaUnit.hasAttacked = true;
+        }
+        else
+        {
+            t_destiny.rend.color = Color.red;
+            t_destiny.f_Buy_Move(); //Creo que a veces nunca se mueve, pero llama a moverse y como no completa el movimiento no pone a true iaUnit.hasmoved, Casi 100% seguro que entra aqui en una especie de bucle infinito
+        }
+        timer = true;
+        StartCoroutine(WaitForMoveToEnd(iaUnit));
+    }
+    IEnumerator WaitForMoveToEnd(Unit iaUnit)
+    {
+        yield return new WaitUntil(() => iaUnit.hasMoved || timeToPassToNextUnit > 5f); //iaUnit.tileSpeed/iaUnit.moveSpeed + 0.2f
+        ResetTiles();
+        yield return new WaitForSeconds(0.5f);
+        iaUnit.FinishgMovement();//para segurarse
+        //GridGenerator.instance.f_GenerateSelfInfluenceMap();
+        f_ia_Attack(iaUnit);
+        timer = false;
+    }
+
 
         foreach (Village village in villages)
         {
