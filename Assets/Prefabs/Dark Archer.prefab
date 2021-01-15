@@ -567,9 +567,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelected: 0
   hasMoved: 0
-  tileSpeed: 5
+  tileSpeed: 10
   moveSpeed: 10
-  attackRadius: 4
+  attackRadius: 2
+  viewRadius: 11
   hasAttacked: 0
   enemiesInRange: []
   playerNumber: 1
@@ -586,7 +587,8 @@ MonoBehaviour:
   deathEffect: {fileID: 8882834092664154197, guid: 43e58a09770a414488a4edf9a2bb5ea7,
     type: 3}
   isKing: 0
-  _tilesReacheable: []
+  displayedText: {fileID: 0}
+  fieldOfView: {fileID: 0}
 --- !u!61 &3293640991218369721
 BoxCollider2D:
   m_ObjectHideFlags: 0
